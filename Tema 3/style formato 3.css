@@ -1,0 +1,50 @@
+/* Estilo del encabezado */
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    color: darkred; /* Texto del encabezado en rojo oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente del encabezado diferente a la lista */
+}
+
+/* Estilo de las listas */
+ol {
+    list-style-type: upper-alpha; /* Lista ordenada alfabéticamente */
+}
+
+li {
+    font-family: 'Verdana', sans-serif; /* Los títulos de los libros no se muestran en fuente serif */
+}
+
+/* Estilo de la lista desordenada */
+ul {
+    list-style-type: square; /* Viñetas cuadradas */
+    background-color: lightyellow; /* Fondo amarillo claro para la lista */
+}
+
+
+/*
+
+ul li:nth-child(even) {
+    background-color: lightgrey; 
+    padding: 5px; 
+}
+
+
+ul li:nth-child(odd) {
+    background-color: green; 
+    padding: 5px; 
+}
+
+*/
+
+
+ul li:nth-child(3n) {
+    background-color: lightgrey; 
+    padding: 5px; 
+}
+
+
+ul li:nth-child(3n -1) {
+    background-color: green; 
+    padding: 5px; 
+}
+

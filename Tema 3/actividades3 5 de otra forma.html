@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+
+        body {
+            min-height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input:focus {
+            border-color: #66afe9;
+            outline: none;
+        }
+        input:required:placeholder-shown {
+            border-left: 5px solid orange; /* Línea naranja cuando el campo es requerido y vacío */
+        }
+        input:valid {
+            border-left: 5px solid green;
+        }
+        input:invalid {
+            /*border-left: 5px solid red;*/
+            border-left: 5px solid red;
+        }
+        .radio-label,
+        .checkbox-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .radio-label input,
+        .checkbox-label input {
+            margin-right: 5px;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>¿QUIÉN ERES?</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="Correo electrónico" pattern="^[a-zA-Z0-9._%+-]+@(iesayala\.com|gmail\.com)$" required>
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="DD/MM/AAAA" required>
+        </fieldset>
+        <fieldset>
+            <legend>¿DE DÓNDE ERES?</legend>
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+            <label for="codigo_postal">Código postal</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Código postal" pattern="\d{5}" required>
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais" placeholder="País" required>
+        </fieldset>
+    </form>
+</body>
+
+</html>

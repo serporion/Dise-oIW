@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #container {
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            line-height: 90px;
+            position: absolute;
+            padding: 5px;
+            transition: all 3s ease; 
+        }
+
+        /* Posiciones iniciales */
+        .ex01 .box {
+            left: 10px;
+            top: 10px;
+        }
+
+        .ex02 .box {
+            left: 10px;
+            top: 130px;
+        }
+
+        .ex03 .box {
+            left: 10px;
+            top: 250px;
+        }
+
+        .ex04 .box {
+            left: 10px;
+            top: 370px;
+        }
+
+        
+        .rotar-intercambiar1 {
+            transform: translateY(120px) rotate(270deg) ;
+            margin-left: 500;
+        }
+
+        .rotar-intercambiar2 {
+            transform: translateY(-120px) rotate(270deg) ;
+        }
+
+        .rotar-intercambiar3 {
+            transform: translateY(120px) rotate(270deg) ;
+        }
+
+        .rotar-intercambiar4 {
+            transform: translateY(-120px) rotate(270deg) ;
+        }
+
+        .resize {
+            width: 50px;
+            height: 50px;
+        }
+
+        .cambio-fondo {
+            background-color: blue;
+        }
+
+        .cambio-color {
+            color: yellow;
+        }
+
+        .cambio-fuente {
+            font-size: 18px;
+        }
+
+        .mover {
+           /*transform: translate(600px);*/
+           margin-left: 500px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="ex01"><div class="box box1">Caja 1</div></div>
+        <div class="ex02"><div class="box box2">Caja 2</div></div>
+        <div class="ex03"><div class="box box3">Caja 3</div></div>
+        <div class="ex04"><div class="box box4">Caja 4</div></div>
+    </div>
+
+    <script>
+        window.onload = () => {
+
+
+
+            // Primera transformación: agregar rotación y posiciones combinadas
+            setTimeout(() => {
+                document.querySelector('.box1').classList.add('rotar-intercambiar1');
+                document.querySelector('.box2').classList.add('rotar-intercambiar2');
+                document.querySelector('.box3').classList.add('rotar-intercambiar3');
+                document.querySelector('.box4').classList.add('rotar-intercambiar4');
+            }, 3000); 
+
+            // Segunda transformación: tamaño, color de fondo, y color de fuente
+            setTimeout(() => {
+                document.querySelector('.box1').classList.add('resize','cambio-fondo','cambio-fuente', 'cambio-color', 'mover');
+                document.querySelector('.box2').classList.add('resize','cambio-fondo','cambio-fuente', 'cambio-color', 'mover');
+                document.querySelector('.box3').classList.add('resize','cambio-fondo','cambio-fuente', 'cambio-color', 'mover');
+                document.querySelector('.box4').classList.add('resize','cambio-fondo','cambio-fuente', 'cambio-color', 'mover');
+
+
+            }, 1500); 
+        };
+
+
+        /*
+
+        function inicio1(){
+
+                return setTimeout(() => {
+                document.querySelector('.box1').classList.add('swap1');
+                document.querySelector('.box2').classList.add('resize', 'swap2');
+                document.querySelector('.box3').classList.add('bg-change', 'swap3');
+                document.querySelector('.box4').classList.add('font-change','color-change', 'swap4');
+            }, 1000); 
+
+            }
+            
+            inicio1();
+
+            function inicio2(){
+
+                return setTimeout(() => {
+                document.querySelector('.box1').classList.add('rotate');
+                document.querySelector('.box2').classList.add('rotate');
+                document.querySelector('.box3').classList.add('rotate');
+                document.querySelector('.box4').classList.add('rotate');
+
+            }, 10000); 
+
+            }
+
+            inicio2();
+
+        */
+    </script>
+</body>
+</html>
+
+

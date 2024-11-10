@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTA REVES</title>
+    <style>
+
+    #testimonials {
+        /*position: relative;*/
+    }
+
+    .testimonials__card {
+        position: absolute;
+        width: 25%;
+        height: 350px;
+        transform-style: preserve-3d;
+        transition: transform 0.8s;
+    }
+
+
+    .testimonials__card:hover {
+        transform: rotateY(180deg);
+    }
+
+
+    .testimonials__card--img {
+        width: 100%;
+        height: 350px;
+
+    }
+
+    .testimonials__card--img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        backface-visibility: hidden;
+    }
+
+
+
+    .testimonials__card--content {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 350px;
+        background-color: rgba(0, 255, 0, 0.5);
+        color: #000;
+        transform: rotateY(180deg);
+        opacity: 0;
+        transition: opacity 0.8s;
+        backface-visibility: hidden;
+    }
+
+    .testimonials__card:hover .testimonials__card--content {
+        opacity: 1;
+    }
+
+    .testimonials__card:hover .testimonials__card--img {
+        opacity: 0;
+    }
+
+
+    .testimonials__card--content__title,
+    .testimonials__card--content__para {
+        margin-left: 1.5rem;
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    </style>
+</head>
+
+<body>
+    <section id="testimonials">
+        <div class="testimonials__card">
+            <div class="testimonials__card--img">
+                <img src="img/testimonials-1.jpg" alt="Testimonial Image">
+            </div>
+            <div class="testimonials__card--content">
+                <h3 class="testimonials__card--content__title">Título</h3>
+                <p class="testimonials__card--content__para">Hovering over the mouse shows the front side of a card,Hovering over the mouse shows the front side of a card,Hovering over the mouse shows the front side of a card,.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

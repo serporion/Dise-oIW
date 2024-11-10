@@ -1,0 +1,63 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño con Secciones</title>
+
+    <style>
+
+
+        .offset { overflow: hidden; margin: 20px 0px 40px 20px; }
+        
+        .offset div {
+            background-color: #eee;
+            float:left;
+            margin-left: 5px;
+            margin-top: 20px;
+            margin-right: 40px;
+            height: 65px;
+            width:160px;
+            text-align: center;
+            box-shadow: -5px -5px 5px 5px grey;
+        }
+        
+        .examplelabelboxshadow {
+            color: #888;
+            font-size: 20px;
+            position: relative;
+            top: 20px;
+
+        }
+0px 0px 50px lightblue inset;
+        
+    </style>
+
+</head>
+
+<body>
+        <div class="offset">
+            <div class="exampleboxshadowa"><p>box-shadow: -5px -5px grey;</p><span class="examplelabelboxshadow"></span></div> 
+            <div class="exampleboxshadowb"><p>box-shadow: -5px -5px 5px grey;</p><span class="examplelabelboxshadow"></span></div>
+            <div class="exampleboxshadowc"><p>box-shadow: -5px -5px 0px grey;</p><span class="examplelabelboxshadow"></span></div>
+            <div class="exampleboxshadowd"><p>box-shadow: -5px -5px 5px 5px grey;</p><span class="examplelabelboxshadow"></span></div>
+            <div class="exampleboxshadowe"><p>box-shadow: 0px 0px 5px 5px grey inset;</p></p><span class="examplelabelboxshadow"></span></div>
+            <div class="exampleboxshadowf"><p>box-shadow: 0px 0px 5px 5px grey;</p><span class="examplelabelboxshadow"></span></div>
+        </div>
+        
+        <div class="offset">
+            <div class="exampleboxshadowg"><span class="examplelabelboxshadow">G</span></div>
+            <div class="exampleboxshadowh"><span class="examplelabelboxshadow">H</span></div>
+            <div class="exampleboxshadowi"><span class="examplelabelboxshadow">I</span></div>
+            <div class="exampleboxshadowj"><span class="examplelabelboxshadow">J</span></div>
+            <div class="exampleboxshadowk"><span class="examplelabelboxshadow">K</span></div>
+            <div class="exampleboxshadowl"><span class="examplelabelboxshadow">L</span></div>
+        </div>
+
+</body>
+
+</html>

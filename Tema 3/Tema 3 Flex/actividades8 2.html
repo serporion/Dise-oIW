@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta</title>
+    <style>
+
+    .cards {
+        display: flex;
+
+    }
+
+    .card {
+        width: 300px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid grey;
+        border-radius: 15px;
+
+        /*No sirve en este caso estas líneas de abajo*/
+        /*align-items: center;
+        justify-content: center;*/
+
+        /*Separo algo las cards*/
+        margin-left: 15px;
+    }
+
+
+    .box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 5px;
+    }
+
+    .foo {
+        display: flex;
+        flex-direction: column;        
+    }
+
+
+    /*Elementos*/
+
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    p {}
+
+    .boton {
+        height: 30px;
+        background: lightgray;
+        border-radius: 15px 15px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <section class="cards">
+
+        <article class="card">
+
+            <div class="box"><img src="test.jpg"></div>
+
+            <div class="box1">
+                <h1>Titulo 1</h1>
+                <p> dskfjasklfjsda fjaklfjasd fkjsdkalf jasdklñfj sdklñfj asdklfj sadlkfj asdklfj asldkñf jsdlkñf jsadlfasdkflsadlfkjasd lkdfadsdsfasdfasdf dfa sd fasd fdas fadsf adsf asdf asdf dasf asdf dasff j</p>
+            </div>
+
+            <footer class="foo">
+                <button class="boton">Button1</button>
+            </footer>
+
+        </article>
+
+        <article class="card">
+            <div class="box"><img src="test.jpg"></div>
+            <div class="box1">
+                <h1>Titulo 1</h1>
+                <p> dskfjasklfjsda fjaklfjasd </p>
+            </div>
+            <footer class="foo">
+                <button class="boton">Button1</button>
+            </footer>
+        </article>
+
+    </section>
+</body>
+
+</html>

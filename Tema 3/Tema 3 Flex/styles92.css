@@ -1,0 +1,120 @@
+::after,::before;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    font-size: 62,5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;  /*Los pongo en columnas y los manejo según eso*/
+    min-height: 100vh;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+header, nav, article, aside, footer {
+    padding: 20px;
+}
+
+
+header {
+    background-color: #a8d08d;
+}
+
+nav {
+    background-color: #f8e4a3;
+}
+
+article {
+    background-color: #ffffff;
+    flex: 1;
+}
+
+aside {
+    background-color: #add8e6;
+}
+
+footer {
+    background-color: #a8d08d;
+}
+
+
+/*Resto*/
+@media (min-width: 769px) {
+    
+    .contenedor {
+        display: flex;
+        flex: 1; /*empuja el propio contenedor para que ocupe todo el espacio hasta el siguiente. Está en flex basic.*/
+    }
+
+    
+    nav {
+        width: 20%;
+    }
+
+    article {
+        width: 60%;
+    }
+
+    aside {
+        width: 20%;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    
+    aside {
+        display: none; /*Lo oculto*/
+        
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;   /*Los pongo todos en una línea*/
+        flex: 1;
+
+    }
+
+    article {
+        width: 75%;
+    }
+
+    nav {
+        width: 25%;
+    }
+}
+
+/*Móvil*/
+@media (max-width: 568px) {
+    
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        flex:0;
+        width: 100%;
+    }
+
+    nav {                  /*me sigue desbordando, preguntar*/
+        display: flex;
+        min-width: 493px;        
+        flex-shrink: 1;
+    }
+
+    aside {
+        /*width: 100%;*/
+        max-width: 100vh;
+        /*width: 51.3vh;*/
+        flex-shrink: 1;
+    }
+
+    aside {
+        display: block; /*haciendolo bloque ocupa todo el espacio y desplaza a los elementos, nav y article.
+    }
+}

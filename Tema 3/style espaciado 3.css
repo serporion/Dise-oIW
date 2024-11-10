@@ -1,0 +1,19 @@
+/* Espaciado general */
+section {
+    margin-top: 50px; /* Mantiene la lista 50 píxeles debajo del encabezado */
+}
+
+
+h1{
+    text-align: center;
+}
+
+ol, ul {
+    margin-left: 20px; /* Los elementos de la lista aparecen al menos 20 píxeles del borde izquierdo */
+}
+
+
+li {
+    margin: 10px 0px 10px 0px; /* Los elementos de la lista están separados al menos 10 píxeles entre sí */
+}
+

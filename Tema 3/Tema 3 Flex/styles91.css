@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url('casa.webp');
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.elementos-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+
+h1 {
+
+    font-size: 2.5rem;
+
+}
+
+h1 span {
+    font-weight: 900;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4caf50;
+}
+
+
+
+
+.elementos-botton {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    padding-right: 50px;
+
+
+}
+
+.elementos-botton h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.elementos-botton p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+
+/* Responsive */
+
+/*Tablets*/
+
+@media (max-width: 1000px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .elementos-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        /*flex-direction: column;*/
+
+        padding: 10px;
+
+        margin-top: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .elementos-botton h2 {
+        font-size: 2rem;
+    }
+
+    .elementos-botton p {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+/*Móvil*/
+@media (max-width: 780px) {
+
+    .elementos-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 10px;
+
+        margin-top: 10px;
+    }
+
+    nav ul li:hover {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+    }
+
+    nav ul li a {
+        display: block; /*lo convierto en bloque para proporcionarle espacio de margenes y poder hacer el hover*/
+        padding: 15px;
+        margin-left: 120px;
+        margin-right: 120px;
+        text-align: center;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .elementos-botton {
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .elementos-botton h2 {
+        font-size: 1.5rem;
+    }
+
+    .elementos-botton p {
+        font-size: 0.9rem;
+    }
+
+}

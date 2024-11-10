@@ -1,0 +1,96 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #FFA500;
+    /* Fondo naranja */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+nav ul {
+    margin-right: 50px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+nav ul li {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+nav ul li a {
+    padding: 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;   /*Las trasformaciones no salen si no están bien sujetos con este display*/
+    
+}
+
+
+nav ul li a:hover {
+    color: #FFF700;
+    transform: scale(1.5) rotate(50deg);
+}
+
+
+
+@media (max-width: 780px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: unset;
+    }
+
+    nav ul {
+        gap: 0;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;        
+    }
+
+    nav ul li a {
+        padding: 9px;
+        text-align: center;
+        color: #FFF;
+        text-decoration: none;
+        font-size: 3vw;
+        font-weight: bold;
+        
+    }
+
+    nav ul li:hover {
+        
+        border-radius: 2px;
+    }
+
+
+}

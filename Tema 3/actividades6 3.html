@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+        .skills__design--progress {
+          width: 100%;
+          height: 20px;
+          background: #eee;
+          position: relative;
+        }
+
+        .skills__design--progress__1 {
+          position: absolute;
+          height: 100%;
+          background: #007bff;
+          animation: progress 5s linear   ;
+          background-color: green;
+          border-radius: 15px;
+        }
+
+        @keyframes progress {
+          50% {
+            width: 50%;
+          }
+          50% {
+            width: 100%;
+          }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <section class="skills"> 
+        <div class="skills__design--progress"> 
+            <span class="skills__design--progress__1"></span> 
+        </div> 
+    </section>
+
+    
+</body>
+</html>
+
+

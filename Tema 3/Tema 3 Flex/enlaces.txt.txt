@@ -1,0 +1,5 @@
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://flexboxfroggy.com/#es
+
+
+https://lenguajecss.com/css/responsive-web-design/bases-responsive/

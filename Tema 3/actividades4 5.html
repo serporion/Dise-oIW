@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño con Secciones</title>
+
+    <style>
+        div {
+        border:2px solid #333;
+        background-color: #ddd;
+
+        }
+
+        p{
+        font-size:2rem;
+        background-color: #888;
+        width:50%;
+        margin:2rem auto;
+        text-align: center;
+        padding: 0.5rem;
+        }
+
+
+        div * p {
+
+            box-sizing: border-box;
+        }
+
+        .borde{
+        border: 2px solid green;
+        /*border: calc(2vw + 0.2rem) solid green;*/
+        /*box-sizing: border-box; */
+        }
+
+        .contorno{
+        outline: 2px solid green;
+        /*outline: calc(2vw + 0.2rem) solid green;*/
+        
+        }
+
+        
+        .clip {
+            background-clip: content-box;
+
+        }
+        
+
+        /*
+        @media (min-width: 768px) {
+            .borde {
+                border: 4px solid green; 
+            }
+            .contorno {
+                outline: 4px solid green; 
+            }
+        }
+        @media (max-width: 767px) {
+            .borde {
+                border: 1px solid green; 
+            }
+            .contorno {
+                outline: 1px solid green; 
+            }
+        */
+</style>
+    
+</head>
+<body>
+
+    <div>
+        <p class="borde clip">borde</p>
+        <p class="contorno">contorno</p>
+    </div>
+</body>
+
+</html>

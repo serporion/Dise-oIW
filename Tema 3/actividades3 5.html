@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap'); //con ttf.
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@400..700&display=swap');
+</style>
+        body {
+
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: 700px;
+        }
+
+        @font-face{ //con woft.
+
+            font-family: roboto;
+            src: url "";
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        section {
+            position: relative;
+            margin: 0 auto;
+            width: 500px;
+            height: 1160px;
+            background-color: #e0ffff;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);   
+        }
+
+       
+        form {
+
+            
+        }
+
+        fieldset {
+            border: 1px solid #add8e6; 
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        legend {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        label {
+            
+            font-weight: bold;
+        }
+        input, select {
+            width: calc(100% - 25px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #add8e6;
+            border-radius: 5px;
+        }
+
+        
+        button {
+            background-color: #5f9ea0; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {  
+            background-color: #4682b4; 
+        }
+
+        input:required {
+            border: 2px solid red;
+
+        }
+        input:focus , select:focus {
+            background-color: lightgrey;    
+            border: 2px solid blue;
+        }
+        input:valid {
+            border: 4px solid green;
+        }
+        input:invalid {
+            border: 2px solid orange;
+        }
+
+       
+
+        label {
+            font-weight: bold;
+        }
+
+        .formulario {
+            position: relative;
+            height: 50px;
+        }
+        .radio-checkbox-label {            
+            font-style: italic;
+
+        }
+
+        .radio-checkbox-label {
+            font-style: italic;
+        }
+
+        .iniciar_sesion {
+            background-color: #f0f8ff; 
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .parrafo_condiciones {
+            text-align: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            color:brown;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 0 0 15px 100px;
+            width: fit-content;
+            padding: 2px;
+
+
+        }
+
+        .fieldset-condiciones input[type="radio"], .fieldset-condiciones input[type="checkbox"] {
+            width: auto; 
+            margin: 0 0 10px 0;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <h2>Formulario de Registro</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>¿QUIÉN ERES?</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="^[a-zA-Z]+$" required>
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    <br>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" pattern="^[a-zA-Z0-9]+@(iesayala\.com|gmail\.com)$" required>
+                    <br>
+                    <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </fieldset>
+                <fieldset>
+                    <legend>¿DE DÓNDE ERES?</legend>
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+                    <br>
+                    <label for="codigo_postal">Código postal</label>
+                    <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Código postal" pattern="\d{5}" required>
+                    <br>
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">País</option>
+                    </select>
+                </fieldset>
+                <fieldset class="iniciar_sesion">
+                    <legend>¿CÓMO QUIERES INICIAR SESIÓN?</legend>
+                    <label for="usuario">Nombre de usuario</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required>
+                    <br>
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                    <br>
+                    <label for="repetir_contrasena">Vuelve a escribir la contraseña</label>
+                    <input type="password" id="repetir_contrasena" name="repetir_contrasena" placeholder="Vuelve a escribir la contraseña" required>
+                </fieldset>
+                <fieldset class="fieldset-condiciones">
+                    <legend>CONDICIONES DE REGISTRO</legend>
+                    <p class="parrafo_condiciones">Deseo recibir ofertas de MI Revista</p>
+                    <label class="radio-checkbox-label" for="una_vez_dia">Una vez al día</label>
+                    <input type="radio" id="una_vez_dia" name="frecuencia_ofertas" value="dia" required>
+                    <br>
+                    <label class="radio-checkbox-label" for="una_vez_semana">Una vez a la semana</label>
+                    <input type="radio" id="una_vez_semana" name="frecuencia_ofertas" value="semana" required>
+                    <br>
+                    <label class="radio-checkbox-label" for="una_vez_mes">Una vez al mes</label>
+                    <input type="radio" id="una_vez_mes" name="frecuencia_ofertas" value="mes" required>
+                    <br>
+                    <label class="radio-checkbox-label" for="acepto_condiciones">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies</label>
+                    <input type="checkbox" id="acepto_condiciones" name="acepto_condiciones" required>
+                </fieldset>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

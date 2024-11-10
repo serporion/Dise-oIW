@@ -1,0 +1,113 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /*display: flex;*/
+    height: 100vh;
+    background-color: rgb(255,228, 196);
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* Botón de hamburguesa */
+.hamburger {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #FFA500;
+    border-radius: 50%;
+}
+
+.hamburger span {
+    z-index: 1;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform-origin: top right; 
+}
+
+
+.hamburger.open span:nth-child(1)  {
+    transform: rotate(45deg) translate(7px, 0px);
+
+}
+
+.hamburger.open span:nth-child(2) {
+    transform: rotate(-45deg) translate(-7px, -14px);
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, 14px);
+}
+
+.hamburger.open span:nth-child(4) {
+    transform: rotate(-45deg) translate(7px, 0px);
+}
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 200px;
+    height: 500px;
+    padding: 10px;
+    background-color: #FFA500;
+    visibility: hidden;
+    opacity: 0;
+    transition: right 0.5s ease, visibility 0.5s ease, opacity 0.5s ease;
+}
+
+.menu.show {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+}
+
+.menu ul {
+    list-style: none;    
+}
+
+.menu ul li {
+    list-style: none;    
+    padding: 10px;
+}
+
+
+.menu ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 0.6rem;
+    padding: 10px;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.menu ul li a:hover {
+    transform: scale(1.1) rotate(20deg);
+    color: #FFF700;
+}
