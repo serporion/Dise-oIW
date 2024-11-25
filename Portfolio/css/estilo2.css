@@ -1,0 +1,559 @@
+
+*, *:before, *:after {    
+    box-sizing: inherit;
+}
+
+:root {
+    font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+    
+    --blanco: #ffffff;
+    --negro: #212121;
+    --principal: #014d4e;
+    --secundario: #ff9408;
+    --terciario: #017374;
+    --fuente-secundaria: "Indy";
+    --tamano-principal: 3.5rem;
+    --tamano-normal: 2rem;
+    --tamano-menu: 1.1rem;
+    --tamano-titulo: 3.1rem;
+
+}
+
+
+/* Tipografía */
+
+h1{
+    
+    font-family: var(--fuente-secundaria);
+    font-size: var(--tamano-principal);
+    color: var(--blanco);
+
+}
+
+h3 {
+
+    font-family: var(--fuente-secundaria);
+    font-size: var(--tamano-normal);
+}
+
+
+/* Titulos de las secciones*/
+
+.titulo {
+    
+    font-size: var(--tamano-titulo);
+    color: var(--terciario);
+    text-align: center;
+}
+
+
+.titulo::after {
+    content: '';  
+    display: block; 
+    width: 100%; 
+    height: 0.8rem; 
+    background-color: var(--secundario); 
+    margin-top: 1rem;  
+}
+
+
+
+h1 span{
+    font-size: var(--tamano-normal);
+    color: var(--secundario);
+}
+
+      
+body{
+    font-size: 1.5rem;
+    font-family: 'Krub', sans-serif; 
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+}
+
+
+.sombra {
+    
+    box-shadow: 0px 31px 76px -3px rgba(112,112,112,0.61);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+
+
+/* Header y Navegación principal */
+
+
+header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: var(--secundario);
+    max-width: 90%;
+    padding: 0.1rem;
+    border-radius: 2rem;
+    
+}
+
+/**Logo**/
+
+.imagen-logo img {
+    max-height: 80px;
+    padding: 0.5vh;
+}
+
+
+/** Menu Hamburguesa **/
+
+.hamburger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 80px;
+    display: none; /* Oculto */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: var(--secundario);
+    border-radius: 50%;
+}
+
+.hamburger span {
+    z-index: 1;
+    transform-origin: top right; 
+    width: 25px;
+    height: 3px;
+    background-color: var(--blanco);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.hamburger.open span:nth-child(1)  {
+    transform: rotate(45deg) translate(7px, 0px);
+
+}
+
+.hamburger.open span:nth-child(2) {
+    transform: rotate(-45deg) translate(-7px, -14px);
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, 14px);
+}
+
+.hamburger.open span:nth-child(4) {
+    transform: rotate(-45deg) translate(7px, 0px);
+}
+
+
+
+/* Navegación principal */
+.navegacion-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.7rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+.navegacion-principal a:focus {
+    color: red;
+}
+
+
+
+/* Navegación en modo móvil */
+.nav_bg nav a:hover {
+    background-color: var(--secundario);
+    transform: scale(1.1) rotate(20deg);
+    color: #FFF700;
+    border-radius: 50px;
+}
+
+.menu {
+    /*display: none;*/
+}
+
+.menu.show {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-start;*/
+    align-items: center;
+    position: absolute;
+    top: 8rem;
+    right: 1rem;
+    width: 30%;
+    height: 50vh;
+    background-color: var(--secundario);
+    z-index: 1;
+    border-radius: 2rem;
+    box-shadow: 0px 31px 76px -3px rgba(112,112,112,0.61);
+}
+
+.menu.show a {
+    padding: 10px 0;
+    font-size: var(--tamano-menu);
+    
+}
+
+
+/** Media Queries Menus **/
+
+@media (max-width: 768px) {
+    .navegacion-principal {
+        display: none; /* Oculta el menú normal */
+    }
+
+    .hamburger {
+        display: flex; /* Muestra el botón hamburguesa */
+        font-size: var(--tamano-menu);
+    }
+
+    .menu {
+        display: none; /* Oculta el menú por defecto */
+       
+    }
+}
+
+
+/* Hero */
+
+.hero{
+    margin: 0 auto;
+    width: calc(90% - 6vh);   
+    display: flex;
+    height: 20rem; 
+    background-image: url(../img/hero.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    gap: 2rem;    
+    margin-bottom: 3rem;
+    border-radius: 5rem;
+    
+}
+
+.imagen-personal {
+    width: 20%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;    
+    border-radius: 5rem;
+}
+
+.contenido-hero{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+    background-color: rgb(0 0 0 / 70%); 
+    border-radius: 5rem;
+    
+}
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco)
+}
+
+
+.boton{
+
+    background-color: var(--terciario);
+    color: var(--blanco);
+    padding: 1rem 1rem;
+    margin-top: 3rem;    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .8rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+
+}
+
+@media (min-width:768px){
+    .boton {
+        width:auto; /* coge todo el ancho */
+    }
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+
+
+/** Main con contenedores según secciones **/
+
+
+.contenedores{
+    max-width: calc(110rem - 5vh);
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+
+
+/** Servicios **/
+
+@media (min-width: 768px) {
+    .servicios{
+        display:flex;
+        /*grid-template-columns: repeat(3, 1fr); 
+        column-gap: 2rem;*/
+    }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Quizá por el espacio del contenedor nunca se use, Pero por si acaso, se alinea por columna*/
+    align-items: center;
+    padding: calc(1rem + 1.5vw);
+}
+
+
+.servicio p{
+    line-height: 2;
+    text-align: left;
+}
+
+.servicio .iconos{
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--secundario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/** Sobre mí **/
+
+@media (max-width: 767px) {    
+    .sobre-mi{        
+        flex-direction: column;     
+    }
+}
+
+.sobre-mi{
+    display: flex;
+    justify-content: center; /* Quizá por el espacio del contenedor nunca se use, Pero por si acaso, se alinea por columna*/
+    align-items: center;
+    padding: calc(2rem + 1.5vw);
+    gap: 5rem;
+}
+
+
+.sobre-mi p{
+    line-height: 2;
+    text-align: left;
+}
+
+.sobre-mi img{
+    width: 30rem;
+}
+
+
+
+
+
+
+/** Proyectos **/
+
+/* Estilo para pantalla a partir de 768px */
+
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los proyectos en el contenedor */
+    gap: 2rem;
+}
+
+
+@media (min-width: 768px) {
+    .proyecto {
+        max-width: 30%;  /* Cada proyecto puede ocupar un máximo de 30% del ancho */
+        padding: calc(2rem + 1.5vw);
+    }
+    
+}
+
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 2rem; 
+}
+
+
+
+/* Estilos para pantallas menores a 768px */
+@media (max-width: 767px) {
+    .proyecto {
+        max-width: 100%;  
+        width: 100%;  
+    }
+
+    .hero {
+        flex-direction: column;        
+    }
+
+    .imagen-personal {
+        display: flex;
+        width: 100%;
+        flex-grow: 1;
+        
+    }
+}
+
+
+.proyecto p{
+    line-height: 2;
+    text-align: left;
+}
+
+.proyecto .iconos{
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--secundario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+/** Contacto **/
+
+.formulario{
+    background-color: var(--secundario);
+    /*width: 50%;*/ /* En vez de tomar este valor que es menos jugable, hacemos la de abajo*/
+    width: min(50rem, 100%); /* Va a tomar el valor mínimo entre los 50rem (500px) o el 100% del form, que en mi proyecto son 960px*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    font-size: var(--tamano-normal);
+   
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;    
+    text-transform: uppercase;
+    font-weight:700;
+    margin-bottom: 2rem;
+    color: var(--terciario);
+
+}
+
+@media (min-width: 786px) {
+    .contenedor-campos {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 2rem;
+        }
+
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1 / 3;
+    }
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+
+}
+
+/*Seccion Footer*/
+
+.footer{
+    text-align: center;
+}
+
+
+/** Scroll Snap **/
+
+/*
+.navegacion-principal,
+.servicios,
+.proyectos,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*/
+
+
+/** Utilidades **/
+
+.w-sm-100{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-sm-100{
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
