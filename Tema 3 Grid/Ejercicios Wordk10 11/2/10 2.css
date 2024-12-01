@@ -1,0 +1,96 @@
+body {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #575151;
+}
+
+img {
+   
+    border-radius: 8px;
+}
+
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "item1 item2"
+        "item3 item3"; 
+    gap: 10px;
+    background-color: #575151;
+    
+  }
+  
+
+  .collage .item {
+    display: none;
+  }
+  
+  .collage .item:nth-child(1) { grid-area: item1; display: block; }
+  .collage .item:nth-child(2) { grid-area: item2; display: block; }
+  .collage .item:nth-child(3) { grid-area: item3; display: block; }
+  
+  img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  
+  @media (min-width: 576px) {
+
+    .collage {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "item1 item1 item2 item2 item3 item3"
+            "item4 item4 item4 item5 item5 item5"
+            "item6 item6 item6 item6 item6 item6";
+        gap: 10px;
+    }
+  
+    .collage .item:nth-child(4) { 
+        grid-area: item4; display: block; 
+    }
+
+    .collage .item:nth-child(5) { 
+        grid-area: item5; display: block; 
+    }
+
+    .collage .item:nth-child(6) { 
+        grid-area: item6; display: block; 
+    }
+
+  }
+  
+  
+  @media (min-width: 992px) {
+    .collage {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "item1 item2 item3 item4 item4 item5"
+            "item6 item6 item6 item7 item8 item8"
+            "item9 item10 item11 item7 item8 item8"; 
+        gap: 10px;
+    }
+  
+    .collage .item:nth-child(7)  { 
+        grid-area: item7; display: block; 
+    }
+    
+    .collage .item:nth-child(8)  {
+        grid-area: item8; display: block; 
+    }
+
+    .collage .item:nth-child(9)  { 
+        grid-area: item9; display: block; 
+    }
+
+    .collage .item:nth-child(10) { 
+        grid-area: item10; display: block; 
+    }
+
+    .collage .item:nth-child(11) { 
+        grid-area: item11; display: block; 
+    }
+  }
