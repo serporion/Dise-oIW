@@ -1,0 +1,148 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+:root {
+    --primary-color: #4a5568;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --bs-dark-button: #212529;
+    --button-color: #4a5568; /* Un gris azulado más profesional */
+    --button-hover-color: #2d3748; /* Un tono más oscuro para el hover */
+    --header-height: 5rem;
+    --footer-height: 7.5rem;
+  }
+  
+   
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding-top: var(--header-height);
+  }
+
+  #cabecera {
+    transition: top 0.3s ease-in-out;
+  }
+
+  .navbar {
+    min-height: var(--header-height);
+  }
+
+  .navbar-brand .navbar-logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .logo {
+    width: 2rem;
+    height: 2.5rem;
+  }
+  
+  .hero {
+    background-image: url('../img/restaurantes.gif');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - var(--header-height));
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .hero .container {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .btn-primary {
+    background-color: var(--bs-dark-button);
+    border-color: var(--button-color);
+  }
+  
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+  }
+  
+  .btn-outline-primary {
+    color: var(--button-color);
+    border-color: var(--button-color);
+  }
+  
+  .btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+  }
+  
+
+  #liveAlertPlaceholder {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 1060;
+  }
+  
+  #testimonialCarousel .card {
+    height: 11.25rem;
+  }
+
+  #testimonialCarousel .card img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  .custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--primary-color);
+    --bs-popover-header-bg: var(--primary-color);
+    --bs-popover-header-color: #fff;
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+  }
+  
+  footer {
+    height: var(--footer-height);
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+     
+    #testimonialCarousel .card {
+      height: 22.5rem;
+    }
+    #testimonialCarousel .card img {
+      width: 100%;
+      object-fit: cover;
+    }
+    footer {
+      font-size: 0.8rem;  
+    }
+  
+    footer .btn-floating {
+      font-size: 0.7rem;  
+      padding: 0.3rem 0.5rem;  
+    }
+
+  }
+  
