@@ -1,0 +1,82 @@
+/// Importación de variables desde "../base/variables".
+/// Contiene configuraciones globales como `$colors`.
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Importación de módulos de Sass para operaciones matemáticas, manipulación de colores y listas.
+/// @link https://sass-lang.com/documentation/modules/math
+/// @link https://sass-lang.com/documentation/modules/color
+/// @link https://sass-lang.com/documentation/modules/list
+@use "sass:math";
+@use "sass:color";
+@use "sass:list";
+
+/// Función para calcular un tamaño de fuente responsive utilizando la técnica de `clamp`.
+/// Genera tamaños de fuente adaptativos basados en un rango de tamaños y anchos de viewport.
+///
+/// @param {number} $min-size - Tamaño mínimo del texto.
+/// @param {number} $max-size - Tamaño máximo del texto.
+/// @param {number} $min-width - Ancho mínimo del viewport (por defecto, 320px).
+/// @param {number} $max-width - Ancho máximo del viewport (por defecto, 1200px).
+///
+/// @return {string} - Devuelve el valor CSS con la función `clamp` para tamaños adaptativos.
+/// @group Functions
+@function fluid-size($min-size, $max-size, $min-width: 320, $max-width: 1200) {
+    // Convertir valores a números sin unidades si es necesario
+    $min-size-num: if(unitless($min-size), $min-size, $min-size / (1px));
+    $max-size-num: if(unitless($max-size), $max-size, $max-size / (1px));
+
+    // Calcular la pendiente para las variaciones de tamaño
+    $slope: math.div($max-size-num - $min-size-num, $max-width - $min-width);
+
+    // Calcular la intersección para determinar el ajuste dinámico
+    $y-intersect: $min-size-num - ($slope * $min-width);
+
+    // Devuelve un tamaño adaptativo utilizando clamp
+    @return clamp(#{$min-size-num}px, calc(#{$y-intersect}px + #{$slope * 100}vw), #{$max-size-num}px);
+}
+
+/// Función para asegurar contraste entre un color y su fondo.
+/// Si el contraste no cumple el nivel mínimo especificado, ajusta el color.
+/// Usa la luminosidad relativa para el cálculo.
+///
+/// @param {color} $color - Color principal a evaluar.
+/// @param {color} $background - Color de fondo (por defecto, blanco).
+/// @param {number} $minimum - Nivel mínimo de contraste (por defecto, 4.5).
+///
+/// @return {color} - Devuelve el color ajustado si no cumple con el contraste.
+/// @group Functions
+@function ensure-contrast($color, $background: white, $minimum: 4.5) {
+    // Calculamos las luminosidades relativas
+    $color-lightness: lightness($color);
+    $background-lightness: lightness($background);
+
+    // Calculamos el contraste
+    $contrast: abs($color-lightness - $background-lightness);
+
+    // Si el contraste no alcanza el mínimo, ajustamos el color
+    @if $contrast < $minimum {
+        @return darken($color, percentage($minimum - $contrast)); // Ajuste usando darken
+    }
+
+    // Devuelve el color original si cumple el contraste
+    @return $color;
+}
+
+/// Función para obtener un color aleatorio basado en una paleta.
+/// Toma un color base del mapa `$colors` y genera variaciones del tono.
+///
+/// @param {string} $palette - Nombre de la paleta/color base en el mapa `$colors`.
+///
+/// @return {color} - Devuelve un color aleatorio derivado de la paleta.
+/// @group Functions
+@function random-color($palette) {
+    // Obtener el color base desde el mapa de colores
+    $base-color: map-get($colors, $palette);
+
+    // Generar una variación aleatoria en el rango [-15, 15]
+    $variation: random(30) - 15;
+
+    // Ajustar el tono del color base y devolverlo
+    @return adjust-hue($base-color, $variation);
+}

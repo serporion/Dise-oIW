@@ -1,0 +1,57 @@
+/// Importamos las variables base desde el archivo ../base/variables.
+/// Las variables incluyen colores y demás utilidades necesarias.
+/// @link path/to/base/variables
+@use "../base/variables" as *;
+
+/// Variables personalizadas para modificar el componente de carrusel de Bootstrap.
+/// Estas variables redefinen los colores principales y activos utilizados en los controles
+/// y los indicadores del carrusel.
+$carousel-control-color: map-get($colors, 'primary'); // Color principal para los controles del carrusel
+$carousel-indicator-active-bg: map-get($colors, 'primary'); // Color de fondo para el indicador activo del carrusel
+
+/// Modificaciones al diseño del componente `carousel` de Bootstrap.
+/// - Redefinimos estilos de elementos internos del carrusel (como bordes y transiciones).
+/// - Personalización de los elementos `card` utilizados dentro de los items.
+/// - Efectos de hover para imágenes y elementos del carrusel.
+/// @group Carousel Section
+.carousel {
+
+  /// Estilo para el contenedor interno del carrusel.
+  /// - Se añaden bordes redondeados y un efecto de "ocultar desbordamiento" para las imágenes u otros contenidos.
+  &-inner {
+    border-radius: 2rem; // Bordes redondeados
+    overflow: hidden; // Oculta contenido que desborda
+  }
+
+  /// Estilo para los items del carrusel.
+  /// - Se define una transición suave al moverse los items.
+  &-item {
+    transition: transform 0.6s ease-in-out; // Transición para el movimiento del carrusel
+
+    /// Estilo para las tarjetas (`card`) dentro de los items del carrusel.
+    /// - Las tarjetas tienen un efecto "zoom" al hacer hover.
+    .card {
+      transform: scale(0.95); // Tamaño inicial reducido
+      transition: transform 0.3s ease; // Transición suave de transformación
+
+      /// Efecto `hover` en las tarjetas.
+      /// - Se escala a un tamaño normal (efecto zoom).
+      &:hover {
+        transform: scale(1);
+      }
+
+      /// Estilo para las imágenes dentro de las tarjetas del carrusel.
+      /// - Se aplica un filtro de brillo a las imágenes.
+      img {
+        filter: brightness(0.9); // Brillo inicial atenuado
+        transition: filter 0.3s ease; // Transición suave en el filtro aplicado
+
+        /// Efecto `hover` en las imágenes.
+        /// - Aumenta el brillo y la saturación para colores más vivos.
+        &:hover {
+          filter: brightness(1.1) saturate(1.5); // Efecto brillo y saturación
+        }
+      }
+    }
+  }
+}

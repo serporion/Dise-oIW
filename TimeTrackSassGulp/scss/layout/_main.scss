@@ -1,0 +1,66 @@
+/// Importación de variables desde "../base/variables".
+/// Contiene configuraciones globales como `$colors`.
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Estilos personalizados para el elemento principal (`main`).
+/// Se aplican transiciones suaves para ajustes dinámicos de la posición.
+/// @group Main
+main {
+  /// Define una transición suave para la propiedad `top`.
+  /// Útil para efectos dinámicos en la posición del elemento principal.
+  transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}
+
+/// Estilos personalizados para el botón primario (`.btn-primary`).
+/// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.
+/// @group Buttons
+.btn-primary {
+  /// Color de fondo del botón primario determinado por `$colors['button']`.
+  background-color: map-get($colors, 'button'); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, 'button'); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &:hover, &:focus {
+    background-color: darken(map-get($colors, 'button'), 10%); // Fondo más oscuro
+    border-color: darken(map-get($colors, 'button'), 10%); // Borde más oscuro
+  }
+}
+
+/// Estilos personalizados para el botón primario con contorno (`.btn-outline-primary`).
+/// Configura colores base y efectos para los estados hover y focus.
+/// @group Buttons
+.btn-outline-primary {
+  /// El color principal del botón y su borde se basan en `$colors['button']`.
+  color: map-get($colors, 'button'); // Color de texto
+  border-color: map-get($colors, 'button'); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &:hover, &:focus {
+    background-color: map-get($colors, 'button'); // Fondo del color principal
+    border-color: map-get($colors, 'button'); // Borde del color principal
+  }
+}
+
+/// Estilos para el contenedor del placeholder de alertas en vivo (`#liveAlertPlaceholder`).
+/// Configuración para centrarlo en pantalla con una capa superior.
+/// @group Alerts
+#liveAlertPlaceholder {
+  /// Posiciona el placeholder en el centro de la pantalla.
+  position: fixed; // Posición fija en el viewport
+  top: 50%; // Centrado vertical
+  left: 50%; // Centrado horizontal
+
+  /// Ajusta la posición exacta mediante una transformación de coordenadas.
+  transform: translate(-50%, -50%); // Centrado exacto dentro de la pantalla
+
+  /// Configura el ancho del placeholder.
+  width: 50%; // Ocupa la mitad del ancho del viewport
+
+  /// Asegura que el placeholder quede sobre otros elementos mediante el índice de apilamiento.
+  z-index: 1060; // Índice de apilamiento alto para superposición
+}

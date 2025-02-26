@@ -1,0 +1,69 @@
+/// Mapas de colores utilizados en el proyecto.
+/// Este mapa incluye colores principales y secundarios,
+/// además de valores utilizados como fondo, texto y botones.
+/// @link ../base/variables#colors
+$colors: (
+        'primary': #4a5568,          // Color principal
+        'secondary': #6c757d,        // Color secundario
+        'background': #f8f9fa,       // Color de fondo
+        'text': #333,                // Color de texto
+        'button': #212529,           // Color principal de los botones
+        'title': #ffffff             // Color títulos
+);
+
+/// Medidas generales utilizadas en el diseño.
+/// Contiene la altura del header y del footer.
+/// @link ../base/variables#sizes
+$sizes: (
+        'header-height': 4rem,       // Altura del encabezado
+        'footer-height': 7rem        // Altura del pie de página
+
+);
+
+/// Puntos de quiebre para diseño responsive.
+/// Cada punto de quiebre corresponde a un tamaño (`sm`, `md`, `lg`, `xl`).
+/// @link ../base/variables#breakpoints
+$breakpoints: (
+        'sm': 576px,                // Pequeño
+        'md': 768px,                // Mediano
+        'lg': 992px,                // Grande
+        'xl': 1200px                // Extra grande
+);
+
+/// Estilos relacionados con las tarjetas (`cards`).
+/// Define características visuales como gradiente, sombras,
+/// bordes redondeados y animaciones de hover.
+/// @link ../base/variables#card-styles
+$card-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%); // Gradiente de fondo
+$card-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);                    // Sombra ligera para las tarjetas
+$card-border-radius: 12px;                                       // Bordes redondeados
+$card-hover-transform: translateY(-8px);                        // Transformación en hover
+$card-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); // Transición suave
+
+
+/// Colores personalizados para los botones.
+/// Incluye valores como el color base, gradientes y estilos de contorno.
+/// @link ../base/variables#button-styles
+$caracteristicas-button-primary: #4a5d68; // Verde-gris para complementar el color primario
+$caracteristicas-button-gradient: linear-gradient(to right, #4a5568, #5d636b); // Gradiente base para botones
+$caracteristicas-outline-gradient: linear-gradient(#fff, #fff) padding-box,
+linear-gradient(45deg, #4a5d68, #6c8490) border-box; // Gradiente de contorno
+
+
+/// Estilos personalizados para el componente `popover` de Bootstrap.
+/// Sobrescribe variables predeterminadas para ajustar el diseño.
+/// @link ../base/variables#popover
+$popover-max-width: 300px;
+$popover-border-radius: 1rem;
+$popover-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+
+
+
+/// Mapa de fuentes tipográficas utilizadas en el proyecto.
+/// Utilizamos dos fuentes principales:
+/// - `primary`: Roboto (texto general, cuerpo)
+/// - `secondary`: Montserrat (encabezados como h1)
+$fonts: (
+        'primary': 'Roboto, sans-serif',  // Fuente principal
+        'secondary': 'Montserrat, sans-serif'  // Fuente secundaria
+);

@@ -1,0 +1,55 @@
+/// Importamos las variables desde el archivo "variables".
+/// @link path/to/variables
+@use "variables" as *;
+@use "../utilidades/funciones" as *;
+
+/// Importamos los mixins desde el archivo "mixins".
+/// @link path/to/utilidades/mixins
+@use "../utilidades/mixins" as *;
+
+/// Aplicamos un estilo global para resetear márgenes y paddings
+/// a todos los selectores (*), pseudo-elementos (*::after, *::before).
+/// También aplicamos la fuente definida en `variables`.
+/// @group Global
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-family: map-get($fonts, 'primary'); // Variable que contiene la familia tipográfica.
+}
+
+/// Configuración de estilos generales para el body
+/// - Transiciones suaves en padding-top y margin-top con distintas duraciones.
+/// - Se utiliza la fuente definida en la variable `font-family`.
+/// - Se aplican colores del mapa `$colors`:
+///   - Fondo: `background`.
+///   - Color de texto: `text`.
+body {
+    transition: padding-top 0.8s ease-in-out, margin-top 0.9s ease-in-out;
+    font-family: map-get($fonts, 'secondary'); // Fuente secundaria: Monserrat.
+    background-color: map-get($colors, 'background'); // Color de fondo.
+    color: map-get($colors, 'text'); // Color de texto.
+    padding-top: map-get($sizes, 'header-height'); // Altura del header (padding-top).
+}
+
+
+/// Personalización para los encabezados (h1-h6).
+/// En este caso, aplicamos la fuente primaria a los encabezados.
+h1 {
+    font-family: map-get($fonts, 'primary') !important; // Fuente principal: Roboto
+    color: map-get($colors, 'title') !important; // Color primario para encabezados
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: map-get($fonts, 'primary') !important; // Fuente principal: Roboto
+    color: map-get($colors, 'primary') !important; // Color primario para encabezados
+}
+
+/// Personalización para los párrafos.
+/// - Se aplican fuentes del mapa `$fonts`
+/// - Se aplica fluid-size para el tamaño
+p {
+    font-family: map-get($fonts, 'secondary') !important; // Fuente secundaria: Monserrat
+    font-size: fluid-size(15px, 20px) !important;
+}

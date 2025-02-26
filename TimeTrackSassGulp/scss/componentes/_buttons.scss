@@ -1,0 +1,64 @@
+/// Importación de mixins desde "../utilidades/mixins".
+/// Contiene utilidades para variantes de botones, hover, etc.
+/// @link ../utilidades/mixins
+@use "../utilidades/mixins" as *;
+
+/// Importación de funciones desde "../utilidades/funciones".
+/// Incluye funciones avanzadas como `fluid-size`, `ensure-contrast`, `random-color`.
+/// @link ../utilidades/funciones
+@use "../utilidades/funciones" as *;
+
+/// Importación de variables desde "../base/variables".
+/// Incluye colores, tamaños y otras configuraciones base.
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Estilos personalizados para botones.
+/// Incluye estilos base, variantes, y efectos de hover.
+/// @group Buttons Section
+.btn {
+  font-size: fluid-size(11px, 16px) !important; // Tamaño fluido entre 11px y 16px
+  text-transform: uppercase; // Texto en mayúsculas
+  letter-spacing: 0.1em; // Espaciado entre letras
+  transition: all 0.3s ease-in-out; // Transición suave para todos los efectos
+
+  /// Estilos para los botones primarios.
+  /// Incluyen variantes de color para hover y active.
+  &-primary {
+    /// Modificación del botón primario de Bootstrap utilizando `button-variant`.
+    /// Se definen:
+    /// - Fondo del botón y borde: `$colors['button']`.
+    /// - Fondo y borde al hacer hover: Colores más oscuros.
+    @include button-variant(
+            $background: map-get($colors, 'button'),
+            $border: map-get($colors, 'button'),
+            $hover-background: darken(map-get($colors, 'button'), 15%), // Fondo más oscuro en hover
+            $hover-border: darken(map-get($colors, 'button'), 20%) // Borde más oscuro en hover
+    );
+
+    /// Aplica un efecto de brillo y resaltado al pasar el cursor.
+    /// @see hover-effect mixin
+    @include hover-effect('glow');
+
+    /// Garantiza un contraste adecuado al asignar un color aleatorio.
+    /// Usa la función `random-color` para obtener un color.
+    /// @see random-color function
+    background-color: ensure-contrast(random-color('primary'));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &:active {
+      background-color: map-get($colors, 'primary') !important; // Color primario forzado
+      border-color: #000 !important; // Borde negro
+      box-shadow: none !important; // Elimina sombras
+    }
+
+    /// Efectos al pasar el cursor en el botón:
+    /// - Sombra adicional.
+    /// - Pequeño movimiento hacia arriba.
+    &:hover {
+      transform: translateY(-2px); // Eleva el botón 2px
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2); // Agrega sombra suave
+    }
+  }
+}

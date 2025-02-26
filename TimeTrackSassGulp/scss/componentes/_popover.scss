@@ -1,0 +1,58 @@
+/// Importación de variables desde "../base/variables".
+/// Contiene configuraciones globales como `$colors`.
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Estilos personalizados para el componente de `popover`.
+/// Ajusta el fondo, aplica un efecto de desenfoque y define estilos adicionales para su encabezado, cuerpo y variantes.
+/// @group Popover
+.popover {
+  /// Aplica un efecto de desenfoque al fondo del `popover`.
+  backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &-header {
+    background: linear-gradient(
+                    45deg,
+                    map-get($colors, 'primary'), // Color primario desde `$colors`
+                    darken(map-get($colors, 'primary'), 10%) // Oscurecimiento del color primario
+    );
+    color: white !important; // Texto blanco
+    border: none; // Sin bordes para el encabezado
+  }
+
+  /// Estilos para el cuerpo del `popover` (`.popover-body`).
+  /// Define el tamaño del texto y la altura de línea.
+  /// @link ../componentes/popover#popover-body
+  &-body {
+    font-size: 0.9rem; // Tamaño del texto
+    line-height: 1.6; // Mejor legibilidad con mayor altura de las líneas
+  }
+
+  /// Estilos para un `popover` con clase adicional personalizada (`.custom-popover`).
+  /// Aplica una animación de entrada/salida suave.
+  /// @link ../componentes/popover#custom-popover
+  &.custom-popover {
+    animation: popoverFade 0.3s ease-in-out; // Animación personalizada
+  }
+}
+
+/// Definición de la animación `popoverFade`.
+/// Se utiliza para un efecto de entrada/salida fluido en el `popover`.
+/// Aplica un desvanecimiento con una transformación vertical.
+/// @link ../componentes/popover#popoverFade
+@keyframes popoverFade {
+  from {
+    opacity: 0; // Transparente al inicio
+    transform: translateY(-10px); // Mover hacia arriba al inicio
+  }
+  to {
+    opacity: 1; // Totalmente opaco al final
+    transform: translateY(0); // Posición inicial al final
+  }
+}

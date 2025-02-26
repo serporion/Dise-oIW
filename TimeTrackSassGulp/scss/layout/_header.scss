@@ -1,0 +1,27 @@
+/// Importación de variables desde "../base/variables".
+/// Contiene configuraciones globales como `$colors`.
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Estilos personalizados para el componente `header`.
+/// Este componente define una cabecera fija, con transición y compatibilidad con capas de contenido.
+/// @group Header
+.header {
+    /// Define una transición suave para la propiedad `top`.
+    /// Esto es útil para efectos como ocultar o mostrar la cabecera dinámicamente.
+    transition: top 0.3s ease-in-out; // Transición suave para cambios en la posición superior
+
+    /// La cabecera está fija en la parte superior de la página.
+    position: fixed; // Posición fija
+    top: 0; // Ubicación fija en la parte superior de la ventana
+
+    /// La cabecera ocupa todo el ancho del viewport.
+    width: 100%; // Ancho completo de la página
+
+    /// Define un alto índice de apilamiento para que el header siempre esté sobre otros elementos.
+    z-index: 1000; // Asegura que la cabecera esté al frente de otros elementos
+
+    /// Configuración del color de fondo desde las variables globales.
+    /// El color de fondo se toma de la clave `background` en la variable `$colors`.
+    background-color: map-get($colors, 'background'); // Fondo consistente con la configuración global
+}

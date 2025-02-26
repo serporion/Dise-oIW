@@ -1,0 +1,40 @@
+/// Importación de variables desde "../base/variables".
+/// Contiene configuraciones globales como tamaños de encabezados (`header-height`).
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Importación de mixins desde "../utilidades/mixins".
+/// Incluye funciones útiles como `flex-center` para centrar elementos en un contenedor flexbox.
+/// @link ../utilidades/mixins
+@use "../utilidades/mixins" as *;
+
+/// Estilo para la sección `hero`.
+/// - Aplica una imagen de fondo ocupando toda la altura menos el header.
+/// - Incluye un efecto de superposición oscurecida.
+/// @group Hero Section
+.hero {
+  transition: margin-top 0.3s ease-in-out; // Transición suave para desplazamientos verticales
+  background-image: url('../../assets/img/restaurantes.gif'); // Imagen de fondo
+  background-size: cover; // Imagen ajustada a cubrir todo el área
+  background-position: center; // Posición centrada de la imagen
+  height: calc(100vh - map-get($sizes, 'header-height')); // Altura de la ventana menos el header
+  position: relative; // Para posicionar elementos hijos de forma absoluta
+
+  /// Superposición de fondo semitransparente.
+  /// - Esto crea un efecto de oscurecimiento encima de la imagen.
+  &::before {
+    content: ''; // Elemento vacío para la superposición
+    position: absolute; // Se coloca encima del elemento padre
+    inset: 0; // Ocupa toda el área del contenedor
+    background: rgba(0, 0, 0, 0.5); // Fondo negro con 50% de opacidad
+  }
+
+  /// Contenedor interno de la sección `hero`.
+  /// - Posiciona los elementos centrados dentro de la sección.
+  .container {
+    position: relative; // Conserva su relación con el contenedor principal
+    z-index: 1; // Asegura que está encima de la superposición
+    @include flex-center; // Centra elementos en posición horizontal y vertical
+    flex-direction: column; // Apila los elementos verticalmente
+  }
+}

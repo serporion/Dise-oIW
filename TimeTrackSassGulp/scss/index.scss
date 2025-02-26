@@ -1,0 +1,44 @@
+
+//Todo de bootstrap ya no hace falta, solo algunas partes de Bootstrap
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//Los @forwards deben ir al principio
+
+@forward 'base/variables';
+@forward 'base/base';
+
+@forward 'utilidades/mixins';
+@forward 'utilidades/funciones';
+
+
+// Mi Layout
+@forward 'layout/header';
+@forward 'layout/main';
+@forward 'layout/footer';
+
+
+// Mis Componentes
+@forward 'componentes/logo';
+@forward 'componentes/hero';
+@forward 'componentes/nav';
+@forward 'componentes/opiniones';
+@forward 'componentes/caracteristicas';
+@forward 'componentes/buttons';
+@forward 'componentes/carousel';
+@forward 'componentes/popover';
+
+
+@import "../node_modules/bootstrap/scss/functions";
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Mis librerias de fuentes
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
+

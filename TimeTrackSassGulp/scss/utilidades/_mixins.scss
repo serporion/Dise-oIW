@@ -1,0 +1,202 @@
+/// Importación de variables desde "../base/variables".
+/// Contiene valores como `$colors` y `$breakpoints`.
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Importación de funciones utilitarias para operaciones avanzadas.
+/// @link ../utilidades/funciones
+@use "../utilidades/funciones" as *;
+
+/// Mixin para manejar consultas responsivas basado en los `breakpoints`.
+/// Permite aplicar estilos condicionales según tamaños de pantalla.
+///
+/// @param {string} $breakpoint - Nombre del breakpoint definido en `$breakpoints`.
+///
+/// @group Mixins
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+/// Mixin para centrar elementos utilizando flexbox.
+/// Aplica `display: flex`, `align-items: center` y `justify-content: center`.
+///
+/// @group Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/// Mixin para establecer configuraciones flexibles de direcciones y alineamientos.
+///
+/// @param {string} $direccion - Dirección del flexbox (por defecto, `row`).
+/// @param {string} $justification - Justificación del contenido (por defecto, `center`).
+/// @param {string} $align - Alineación de los ítems (por defecto, `center`).
+///
+/// @group Mixins
+@mixin flexposition($direccion: row, $justification: center, $align: center) {
+  display: flex;
+  flex-direction: $direccion;
+  align-items: $align;
+  justify-content: $justification;
+}
+
+/// Mixin para definir variantes fáciles de botones.
+///
+/// @param {color} $background - Color de fondo.
+/// @param {color} $border - Color del borde.
+/// @param {color} $hover-background - Color de fondo al pasar el cursor.
+/// @param {color} $hover-border - Color del borde al pasar el cursor.
+///
+/// @group Mixins
+@mixin button-variant($background, $border, $hover-background, $hover-border) {
+  background-color: $background;
+  border: 1px solid $border;
+
+  &:hover {
+    background-color: $hover-background;
+    border-color: $hover-border;
+  }
+}
+
+/// Mixin para aplicar configuraciones de navegación.
+///
+/// @param {string} $direction - Dirección de los elementos (por defecto, `row`).
+/// @param {string} $spacing - Espaciado entre los elementos (por defecto, `space-around`).
+///
+/// @group Mixins
+@mixin navigation($direction: row, $spacing: space-around) {
+  @include flexposition($direction, $spacing);
+
+  &-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: fluid-size(16px, 30px);
+  }
+
+  &-item {
+    list-style: none;
+    font-size: fluid-size(14, 20);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &-link {
+    text-decoration: none !important;
+    color: ensure-contrast(random-color('primary'));
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: random-color('secondary');
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+/// Mixin para aplicar efectos de hover elegantes.
+///
+/// @param {string} $type - Tipo de efecto (`scale`, `lift`, `glow`).
+///
+/// @see hover-effect
+/// @group Mixins
+@mixin hover-effect($type: 'scale') {
+  transition: all 0.3s ease;
+
+  @if $type == 'scale' {
+    &:hover {
+      transform: scale(1.05);
+    }
+  } @else if $type == 'lift' {
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  } @else if $type == 'glow' {
+    &:hover {
+      box-shadow: 0 0 15px random-color('primary');
+    }
+  }
+}
+
+/// Mixin para generar gradientes dinámicos basados en colores de la paleta.
+///
+/// @param {number} $direction - Dirección del gradiente (por defecto, `45deg`).
+/// @group Mixins
+@mixin dynamic-gradient($direction: 45deg) {
+  $color1: random-color('primary');
+  $color2: random-color('secondary');
+  background: linear-gradient($direction, $color1, $color2);
+  transition: background 0.5s ease;
+
+  &:hover {
+    background: linear-gradient($direction, $color2, $color1);
+  }
+}
+
+/// Diseña el componente de sección de testimonios con estilo y efectos de hover.
+///
+/// Este mixin organiza el diseño responsivo del carrusel de testimonios, incluyendo estilos personalizados para elementos como `h2`, tarjetas, controles del carrusel e indicadores.
+/// @group Components
+@mixin testimonial-component {
+  #opiniones {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+
+    h2 {
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: map-get($colors, 'primary');
+        border-radius: 3px;
+      }
+    }
+
+    // Configuración del carrusel y tarjetas de testimonios.
+    #testimonialCarousel {
+      .carousel-inner {
+        padding: 1rem 0;
+      }
+
+      .card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: auto;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}

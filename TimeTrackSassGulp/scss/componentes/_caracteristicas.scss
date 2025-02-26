@@ -1,0 +1,169 @@
+/// Importamos los mixins desde "../utilidades/mixins".
+/// Incluye utilidades para diseños flexibles como `flex-center`.
+/// @link path/to/utilidades/mixins
+@use "../utilidades/mixins" as *;
+
+/// Importamos las variables desde "../base/variables".
+/// Entre ellas se incluyen gradientes, colores, y transiciones para el tema.
+/// @link path/to/base/variables
+@use "../base/variables" as *;
+
+/// Estilos para la sección de "Características".
+/// - Usamos `flex-center` para centrar el contenido.
+/// - Se estructuran tarjetas (`.card`) con efectos de hover, sombras, y contenido dinámico.
+/// @group Caracteristicas Section
+#caracteristicas {
+  /// Diseño centrado usando el mixin `flex-center`.
+  @include flex-center;
+  padding: 3rem 0; // Separación vertical para la sección
+
+  /// Estilización para las tarjetas en la sección de características.
+  /// Incluye gradientes, bordes redondeados y animaciones de hover.
+  .card {
+    background: $card-gradient; // Gradiente establecido en variables
+    border: none;
+    border-radius: $card-border-radius; // Radio del borde
+    box-shadow: $card-shadow; // Sombra personalizada
+    transition: $card-transition; // Transición definida en las variables
+    overflow: hidden; // Oculta contenidos desbordados
+    position: relative;
+
+    /// Línea superior decorativa como gradiente.
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, #4a5568, #6c757d); // Gradiente decorativo
+      opacity: 0.8;
+    }
+
+    /// Efecto de Hover para la tarjeta:
+    /// - Aumenta el tamaño con una transformación.
+    /// - Aplica una sombra más pronunciada.
+    &:hover {
+      transform: $card-hover-transform; // Transformación en hover definida en variables
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); // Más sombra en hover.
+    }
+
+    /// Configuración específica para dispositivos medianos en adelante.
+    @include respond-to('md') {
+      min-height: 320px;
+    }
+
+    /// Estilización para el contenido interno de las tarjetas.
+    .card-body {
+      padding: 1.8rem; // Padding interno
+    }
+
+    /// Diseño del título dentro de las tarjetas.
+    /// Incluye fuente en negrita y decoraciones adicionales.
+    .card-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      position: relative;
+      padding-bottom: 0.8rem;
+
+      /// Línea decorativa debajo del título.
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: $caracteristicas-button-primary; // Color tomado de las variables
+        border-radius: 3px;
+      }
+    }
+
+    /// Estilo para el texto de las tarjetas.
+    .card-text {
+      color: #566a88;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /// Estilo para los botones dentro de las tarjetas.
+    /// Incluye efectos de sombra, transiciones y variantes personalizadas (`btn-primary` y `btn-outline-primary`).
+    .btn {
+      border-radius: 30px;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      /// Efecto sombreado al hacer hover (con un efecto gradual).
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.1);
+        transition: width 0.3s ease;
+        z-index: 0;
+        border-radius: inherit;
+      }
+
+      /// Transición para mostrar la sombra al hacer hover.
+      &:hover::after {
+        width: 100%;
+      }
+
+      /// Incluye un gradiente de fondo y sombras personalizadas.
+      &.btn-primary {
+        background: $caracteristicas-button-gradient;
+        border: none;
+        box-shadow: 0 4px 15px rgba(58, 123, 213, 0.4);
+
+        /// Efecto hover para elevar ligeramente el botón.
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(58, 123, 213, 0.6);
+        }
+
+        /// Efecto al mantener presionado.
+        &:active {
+          transform: translateY(1px);
+        }
+      }
+
+
+      ///Gradiente de contorno y adaptación de colores en hover.
+      &.btn-outline-primary {
+        background: $caracteristicas-outline-gradient;
+        border: 2px solid transparent;
+        color: $caracteristicas-button-primary;
+
+        /// Cambios en hover:
+        /// - Color más oscuro para el texto.
+        /// - Elevación opcional.
+        &:hover {
+          color: darken($caracteristicas-button-primary, 10%);
+          box-shadow: 0 5px 15px rgba(58, 123, 213, 0.2);
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+/// Animación personalizada para efectos de entrada tipo "fade up".
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); // Inicia desde abajo con transparencia
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); // Termina con posición normal y opacidad completa
+  }
+}

@@ -1,0 +1,62 @@
+/// Importación de mixins desde "../utilidades/mixins".
+/// Contiene utilidades como `testimonial-component` y `respond-to`.
+/// @link ../utilidades/mixins
+@use "../utilidades/mixins" as *;
+
+/// Incluye el mixin `testimonial-component` para configurar los estilos base del componente testimonial.
+/// @see testimonial-component
+@include testimonial-component;
+
+/// Estilos para el carrusel de testimonios (`#testimonialCarousel`).
+/// Contiene configuraciones específicas para las tarjetas dentro del carrusel.
+/// @group Testimonials
+#testimonialCarousel {
+  /// Estilos para las tarjetas (`.card`) dentro del carrusel.
+  .card {
+    height: 11.25rem; // Altura predeterminada para las tarjetas
+
+    /// Estilos para las imágenes dentro de las tarjetas.
+    /// - La imagen cubre todo el área de la tarjeta respetando proporciones.
+    img {
+      height: 100%; // Altura completa de la tarjeta
+      object-fit: cover; // Ajusta la imagen dentro de su contenedor
+    }
+  }
+
+  /// Estilos responsivos aplicados en puntos de quiebre 'md' (medianos).
+  /// Ajusta la altura de las tarjetas y la anchura de las imágenes.
+  /// @see respond-to mixin
+  @include respond-to('md') {
+    .card {
+      height: 13.5rem; // Altura ajustada para pantallas medianas
+
+      img {
+        width: 100%; // La imagen ocupará el ancho completo del contenedor
+      }
+    }
+  }
+}
+
+/// Estilos para el autor del testimonio (`.testimonial-author`).
+/// Incluye detalles como estilo de texto, un borde decorativo y espaciado.
+/// @link ../componentes/testimonials#testimonial-author
+.testimonial-author {
+  font-style: italic; // Estilo de texto en cursiva
+  color: #6c757d; // Color gris suave
+  margin-top: 0.75rem; // Espaciado superior
+  position: relative; // Para habilitar pseudo-elementos
+  padding-left: 1rem; // Espaciado interior a la izquierda
+  border-left: 2px solid #dee2e6; // Línea decorativa a la izquierda
+  font-size: 0.9em; // Tamaño ligeramente reducido
+  line-height: 1.4; // Altura de línea para mejor legibilidad
+}
+
+/// Pseudo-elemento decorativo para el autor del testimonio.
+/// Añade un guion largo (`—`) al inicio de la cita.
+/// @link ../componentes/testimonials#testimonial-author
+.testimonial-author::before {
+  content: "—"; // Guion largo como detalle inicial
+  position: absolute; // Posicionado relativo al contenedor padre
+  left: 0.25rem; // Espaciado a la izquierda
+  color: #adb5bd; // Color gris suave
+}

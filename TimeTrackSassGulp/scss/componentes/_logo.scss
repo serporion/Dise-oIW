@@ -1,0 +1,20 @@
+/// Estilos para la marca de la barra de navegación (`navbar-brand`).
+/// Incluye configuraciones para el logotipo dentro de la barra de navegación.
+/// @link ../componentes/navbar#navbar-brand
+.navbar-brand {
+  /// Estilos para el logotipo de la barra de navegación (`navbar-logo`).
+  /// Define el ancho y alto del logotipo.
+  /// @link ../componentes/navbar#navbar-logo
+  .navbar-logo {
+    width: 30px; // Ancho del logotipo
+    height: 30px; // Alto del logotipo
+  }
+}
+
+/// Estilos personalizados para el logotipo general (`.logo`).
+/// Utilizado en diferentes partes del diseño.
+/// @link ../componentes/logo
+.logo {
+  width: 2rem; // Ancho del logotipo
+  height: 2.5rem; // Alto del logotipo
+}

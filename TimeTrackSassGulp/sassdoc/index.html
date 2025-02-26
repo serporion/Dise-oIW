@@ -1,0 +1,1615 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Timetracksassgulp - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Timetracksassgulp - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Timetracksassgulp - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="alerts"><a href="#alerts">alerts</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="alerts-css"><a href="#alerts-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="alerts" data-name="#liveAlertPlaceholder" data-type="css"><a href="#alerts-css-#liveAlertPlaceholder">#liveAlertPlaceholder</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="buttons"><a href="#buttons">buttons</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="buttons-css"><a href="#buttons-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="buttons" data-name=".btn-primary" data-type="css"><a href="#buttons-css-.btn-primary">.btn-primary</a></li><li class="sidebar__item sassdoc__item" data-group="buttons" data-name=".btn-outline-primary" data-type="css"><a href="#buttons-css-.btn-outline-primary">.btn-outline-primary</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="buttons section"><a href="#buttons section">buttons section</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="buttons section-css"><a href="#buttons section-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="buttons section" data-name=".btn" data-type="css"><a href="#buttons section-css-.btn">.btn</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="caracteristicas section"><a href="#caracteristicas section">caracteristicas section</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="caracteristicas section-css"><a href="#caracteristicas section-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="caracteristicas section" data-name="#caracteristicas" data-type="css"><a href="#caracteristicas section-css-#caracteristicas">#caracteristicas</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="carousel section"><a href="#carousel section">carousel section</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="carousel section-css"><a href="#carousel section-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="carousel section" data-name=".carousel" data-type="css"><a href="#carousel section-css-.carousel">.carousel</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="components"><a href="#components">components</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="components-mixin"><a href="#components-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="components" data-name="testimonial-component" data-type="mixin"><a href="#components-mixin-testimonial-component">testimonial-component</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="footer"><a href="#footer">footer</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="footer-css"><a href="#footer-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="footer" data-name="footer" data-type="css"><a href="#footer-css-footer">footer</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="functions"><a href="#functions">functions</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="functions-function"><a href="#functions-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="functions" data-name="fluid-size" data-type="function"><a href="#functions-function-fluid-size">fluid-size</a></li><li class="sidebar__item sassdoc__item" data-group="functions" data-name="ensure-contrast" data-type="function"><a href="#functions-function-ensure-contrast">ensure-contrast</a></li><li class="sidebar__item sassdoc__item" data-group="functions" data-name="random-color" data-type="function"><a href="#functions-function-random-color">random-color</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="global"><a href="#global">global</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="global-css"><a href="#global-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="global" data-name="*,
+*::after,
+*::before" data-type="css"><a href="#global-css-*,
+*::after,
+*::before">*, *::after, *::before</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="header"><a href="#header">header</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="header-css"><a href="#header-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="header" data-name=".header" data-type="css"><a href="#header-css-.header">.header</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="hero section"><a href="#hero section">hero section</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="hero section-css"><a href="#hero section-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="hero section" data-name=".hero" data-type="css"><a href="#hero section-css-.hero">.hero</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="main"><a href="#main">main</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="main-css"><a href="#main-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="main" data-name="main" data-type="css"><a href="#main-css-main">main</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="mixins"><a href="#mixins">mixins</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="mixins-mixin"><a href="#mixins-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="respond-to" data-type="mixin"><a href="#mixins-mixin-respond-to">respond-to</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="flex-center" data-type="mixin"><a href="#mixins-mixin-flex-center">flex-center</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="flexposition" data-type="mixin"><a href="#mixins-mixin-flexposition">flexposition</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="button-variant" data-type="mixin"><a href="#mixins-mixin-button-variant">button-variant</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="navigation" data-type="mixin"><a href="#mixins-mixin-navigation">navigation</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="hover-effect" data-type="mixin"><a href="#mixins-mixin-hover-effect">hover-effect</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="dynamic-gradient" data-type="mixin"><a href="#mixins-mixin-dynamic-gradient">dynamic-gradient</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="navigation"><a href="#navigation">navigation</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="navigation-css"><a href="#navigation-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="navigation" data-name=".navbar" data-type="css"><a href="#navigation-css-.navbar">.navbar</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="popover"><a href="#popover">popover</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="popover-css"><a href="#popover-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="popover" data-name=".popover" data-type="css"><a href="#popover-css-.popover">.popover</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="testimonials"><a href="#testimonials">testimonials</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="testimonials-css"><a href="#testimonials-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="testimonials" data-name="#testimonialCarousel" data-type="css"><a href="#testimonials-css-#testimonialCarousel">#testimonialCarousel</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="body" data-type="css"><a href="#undefined-css-body">body</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="h1" data-type="css"><a href="#undefined-css-h1">h1</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-primary" data-type="css"><a href="#undefined-css-&amp;-primary">&amp;-primary</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active" data-type="css"><a href="#undefined-css-background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active">background-color: ensure-contrast(random-color(&#39;primary&#39;)); /// Modificación específica para el estado `active` del botón. /// Sobrescribe valores por defecto de Bootstrap con `!important`. &amp;:active</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:active" data-type="css"><a href="#undefined-css-&amp;:active">&amp;:active</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".card" data-type="css"><a href="#undefined-css-.card">.card</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;::before" data-type="css"><a href="#undefined-css-&amp;::before">&amp;::before</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".card-body" data-type="css"><a href="#undefined-css-.card-body">.card-body</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".card-title" data-type="css"><a href="#undefined-css-.card-title">.card-title</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;::after" data-type="css"><a href="#undefined-css-&amp;::after">&amp;::after</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".card-text" data-type="css"><a href="#undefined-css-.card-text">.card-text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".btn" data-type="css"><a href="#undefined-css-.btn">.btn</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;::after" data-type="css"><a href="#undefined-css-&amp;::after">&amp;::after</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover::after" data-type="css"><a href="#undefined-css-&amp;:hover::after">&amp;:hover::after</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;.btn-primary" data-type="css"><a href="#undefined-css-&amp;.btn-primary">&amp;.btn-primary</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:active" data-type="css"><a href="#undefined-css-&amp;:active">&amp;:active</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;.btn-outline-primary" data-type="css"><a href="#undefined-css-&amp;.btn-outline-primary">&amp;.btn-outline-primary</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-inner" data-type="css"><a href="#undefined-css-&amp;-inner">&amp;-inner</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-item" data-type="css"><a href="#undefined-css-&amp;-item">&amp;-item</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".card" data-type="css"><a href="#undefined-css-.card">.card</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;::before" data-type="css"><a href="#undefined-css-&amp;::before">&amp;::before</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".container" data-type="css"><a href="#undefined-css-.container">.container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".navbar-brand" data-type="css"><a href="#undefined-css-.navbar-brand">.navbar-brand</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".navbar-logo" data-type="css"><a href="#undefined-css-.navbar-logo">.navbar-logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".logo" data-type="css"><a href="#undefined-css-.logo">.logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-brand" data-type="css"><a href="#undefined-css-&amp;-brand">&amp;-brand</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".navbar-logo" data-type="css"><a href="#undefined-css-.navbar-logo">.navbar-logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-nav" data-type="css"><a href="#undefined-css-&amp;-nav">&amp;-nav</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".logo" data-type="css"><a href="#undefined-css-.logo">.logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".nav-item" data-type="css"><a href="#undefined-css-.nav-item">.nav-item</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".nav-link" data-type="css"><a href="#undefined-css-.nav-link">.nav-link</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".card" data-type="css"><a href="#undefined-css-.card">.card</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".testimonial-author" data-type="css"><a href="#undefined-css-.testimonial-author">.testimonial-author</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".testimonial-author::before" data-type="css"><a href="#undefined-css-.testimonial-author::before">.testimonial-author::before</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header" data-type="css"><a href="#undefined-css-backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header">backdrop-filter: blur(5px); // Fondo con desenfoque leve /// Fijar el color de fondo con transparencia. background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente /// Estilos para el encabezado del `popover` (`.popover-header`). /// Incluye un degradado basado en el color primario y texto en blanco. /// @link ../componentes/popover#popover-header &amp;-header</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header" data-type="css"><a href="#undefined-css-background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header">background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente /// Estilos para el encabezado del `popover` (`.popover-header`). /// Incluye un degradado basado en el color primario y texto en blanco. /// @link ../componentes/popover#popover-header &amp;-header</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-header" data-type="css"><a href="#undefined-css-&amp;-header">&amp;-header</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-body" data-type="css"><a href="#undefined-css-&amp;-body">&amp;-body</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;.custom-popover" data-type="css"><a href="#undefined-css-&amp;.custom-popover">&amp;.custom-popover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text" data-type="css"><a href="#undefined-css-height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text">height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer /// Color de texto y fondo del footer. /// El color de fondo utiliza el color primario global del proyecto. color: #fff; background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer /// Estilos para el texto dentro del footer (`.text`). /// Configura márgenes y tamaños de fuente responsivos. /// @link ../componentes/footer#text .text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text" data-type="css"><a href="#undefined-css-color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text">color: #fff; background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer /// Estilos para el texto dentro del footer (`.text`). /// Configura márgenes y tamaños de fuente responsivos. /// @link ../componentes/footer#text .text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".text" data-type="css"><a href="#undefined-css-.text">.text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".bi" data-type="css"><a href="#undefined-css-.bi">.bi</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".btn-floating" data-type="css"><a href="#undefined-css-.btn-floating">.btn-floating</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}
+
+/// Estilos personalizados para el botón primario (`.btn-primary`).
+/// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.
+/// @group Buttons
+.btn-primary" data-type="css"><a href="#undefined-css-transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}
+
+/// Estilos personalizados para el botón primario (`.btn-primary`).
+/// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.
+/// @group Buttons
+.btn-primary">transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales } /// Estilos personalizados para el botón primario (`.btn-primary`). /// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus. /// @group Buttons .btn-primary</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus" data-type="css"><a href="#undefined-css-background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus">background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales /// Color del borde del botón primario. border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables /// Estilos para los estados hover y focus del botón primario. /// Oscurece el color de fondo y del borde para el efecto visual. &amp;:hover, &amp;:focus</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus" data-type="css"><a href="#undefined-css-border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus">border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables /// Estilos para los estados hover y focus del botón primario. /// Oscurece el color de fondo y del borde para el efecto visual. &amp;:hover, &amp;:focus</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover, &amp;:focus" data-type="css"><a href="#undefined-css-&amp;:hover, &amp;:focus">&amp;:hover, &amp;:focus</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="color: map-get($colors, &#39;button&#39;); // Color de texto
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &amp;:hover, &amp;:focus" data-type="css"><a href="#undefined-css-color: map-get($colors, &#39;button&#39;); // Color de texto
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &amp;:hover, &amp;:focus">color: map-get($colors, &#39;button&#39;); // Color de texto border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón /// Estilos para los estados hover y focus del botón con contorno. /// Cambia el fondo y el borde al color principal. &amp;:hover, &amp;:focus</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover, &amp;:focus" data-type="css"><a href="#undefined-css-&amp;:hover, &amp;:focus">&amp;:hover, &amp;:focus</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="colors" data-type="variable"><a href="#undefined-variable-colors">colors</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="sizes" data-type="variable"><a href="#undefined-variable-sizes">sizes</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="breakpoints" data-type="variable"><a href="#undefined-variable-breakpoints">breakpoints</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="card-gradient" data-type="variable"><a href="#undefined-variable-card-gradient">card-gradient</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="caracteristicas-button-primary" data-type="variable"><a href="#undefined-variable-caracteristicas-button-primary">caracteristicas-button-primary</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="popover-max-width" data-type="variable"><a href="#undefined-variable-popover-max-width">popover-max-width</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="fonts" data-type="variable"><a href="#undefined-variable-fonts">fonts</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="carousel-control-color" data-type="variable"><a href="#undefined-variable-carousel-control-color">carousel-control-color</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="alerts"><div class="container">alerts</div></h1><section class="main__sub-section" id="alerts-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="alerts-css-#liveAlertPlaceholder"><h3 class="item__heading"><a class="item__name" href="#alerts-css-#liveAlertPlaceholder">#liveAlertPlaceholder</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#liveAlertPlaceholder {
+  /// Posiciona el placeholder en el centro de la pantalla.
+  position: fixed; // Posición fija en el viewport
+  top: 50%; // Centrado vertical
+  left: 50%; // Centrado horizontal
+
+  /// Ajusta la posición exacta mediante una transformación de coordenadas.
+  transform: translate(-50%, -50%); // Centrado exacto dentro de la pantalla
+
+  /// Configura el ancho del placeholder.
+  width: 50%; // Ocupa la mitad del ancho del viewport
+
+  /// Asegura que el placeholder quede sobre otros elementos mediante el índice de apilamiento.
+  z-index: 1060; // Índice de apilamiento alto para superposición
+}</code>" data-collapsed="#liveAlertPlaceholder { ... }"><code>#liveAlertPlaceholder { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor del placeholder de alertas en vivo (<code>#liveAlertPlaceholder</code>). Configuración para centrarlo en pantalla con una capa superior.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="buttons"><div class="container">buttons</div></h1><section class="main__sub-section" id="buttons-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="buttons-css-.btn-primary"><h3 class="item__heading"><a class="item__name" href="#buttons-css-.btn-primary">.btn-primary</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.btn-primary {
+  /// Color de fondo del botón primario determinado por `$colors[&#39;button&#39;]`.
+  background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus {
+    background-color: darken(map-get($colors, &#39;button&#39;), 10%); // Fondo más oscuro
+    border-color: darken(map-get($colors, &#39;button&#39;), 10%); // Borde más oscuro
+  }
+}</code>" data-collapsed=".btn-primary { ... }"><code>.btn-primary { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para el botón primario (<code>.btn-primary</code>). Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.</p></div></section><section class="main__item container item" id="buttons-css-.btn-outline-primary"><h3 class="item__heading"><a class="item__name" href="#buttons-css-.btn-outline-primary">.btn-outline-primary</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.btn-outline-primary {
+  /// El color principal del botón y su borde se basan en `$colors[&#39;button&#39;]`.
+  color: map-get($colors, &#39;button&#39;); // Color de texto
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &amp;:hover, &amp;:focus {
+    background-color: map-get($colors, &#39;button&#39;); // Fondo del color principal
+    border-color: map-get($colors, &#39;button&#39;); // Borde del color principal
+  }
+}</code>" data-collapsed=".btn-outline-primary { ... }"><code>.btn-outline-primary { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para el botón primario con contorno (<code>.btn-outline-primary</code>). Configura colores base y efectos para los estados hover y focus.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="buttons section"><div class="container">buttons section</div></h1><section class="main__sub-section" id="buttons section-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="buttons section-css-.btn"><h3 class="item__heading"><a class="item__name" href="#buttons section-css-.btn">.btn</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.btn {
+  font-size: fluid-size(11px, 16px) !important; // Tamaño fluido entre 11px y 16px
+  text-transform: uppercase; // Texto en mayúsculas
+  letter-spacing: 0.1em; // Espaciado entre letras
+  transition: all 0.3s ease-in-out; // Transición suave para todos los efectos
+
+  /// Estilos para los botones primarios.
+  /// Incluyen variantes de color para hover y active.
+  &amp;-primary {
+    /// Modificación del botón primario de Bootstrap utilizando `button-variant`.
+    /// Se definen:
+    /// - Fondo del botón y borde: `$colors[&#39;button&#39;]`.
+    /// - Fondo y borde al hacer hover: Colores más oscuros.
+    @include button-variant(
+            $background: map-get($colors, &#39;button&#39;),
+            $border: map-get($colors, &#39;button&#39;),
+            $hover-background: darken(map-get($colors, &#39;button&#39;), 15%), // Fondo más oscuro en hover
+            $hover-border: darken(map-get($colors, &#39;button&#39;), 20%) // Borde más oscuro en hover
+    );
+
+    /// Aplica un efecto de brillo y resaltado al pasar el cursor.
+    /// @see hover-effect mixin
+    @include hover-effect(&#39;glow&#39;);
+
+    /// Garantiza un contraste adecuado al asignar un color aleatorio.
+    /// Usa la función `random-color` para obtener un color.
+    /// @see random-color function
+    background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active {
+      background-color: map-get($colors, &#39;primary&#39;) !important; // Color primario forzado
+      border-color: #000 !important; // Borde negro
+      box-shadow: none !important; // Elimina sombras
+    }
+
+    /// Efectos al pasar el cursor en el botón:
+    /// - Sombra adicional.
+    /// - Pequeño movimiento hacia arriba.
+    &amp;:hover {
+      transform: translateY(-2px); // Eleva el botón 2px
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2); // Agrega sombra suave
+    }
+  }
+}</code>" data-collapsed=".btn { ... }"><code>.btn { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para botones. Incluye estilos base, variantes, y efectos de hover.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="caracteristicas section"><div class="container">caracteristicas section</div></h1><section class="main__sub-section" id="caracteristicas section-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="caracteristicas section-css-#caracteristicas"><h3 class="item__heading"><a class="item__name" href="#caracteristicas section-css-#caracteristicas">#caracteristicas</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#caracteristicas {
+  /// Diseño centrado usando el mixin `flex-center`.
+  @include flex-center;
+  padding: 3rem 0; // Separación vertical para la sección
+
+  /// Estilización para las tarjetas en la sección de características.
+  /// Incluye gradientes, bordes redondeados y animaciones de hover.
+  .card {
+    background: $card-gradient; // Gradiente establecido en variables
+    border: none;
+    border-radius: $card-border-radius; // Radio del borde
+    box-shadow: $card-shadow; // Sombra personalizada
+    transition: $card-transition; // Transición definida en las variables
+    overflow: hidden; // Oculta contenidos desbordados
+    position: relative;
+
+    /// Línea superior decorativa como gradiente.
+    &amp;::before {
+      content: &#39;&#39;;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, #4a5568, #6c757d); // Gradiente decorativo
+      opacity: 0.8;
+    }
+
+    /// Efecto de Hover para la tarjeta:
+    /// - Aumenta el tamaño con una transformación.
+    /// - Aplica una sombra más pronunciada.
+    &amp;:hover {
+      transform: $card-hover-transform; // Transformación en hover definida en variables
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); // Más sombra en hover.
+    }
+
+    /// Configuración específica para dispositivos medianos en adelante.
+    @include respond-to(&#39;md&#39;) {
+      min-height: 320px;
+    }
+
+    /// Estilización para el contenido interno de las tarjetas.
+    .card-body {
+      padding: 1.8rem; // Padding interno
+    }
+
+    /// Diseño del título dentro de las tarjetas.
+    /// Incluye fuente en negrita y decoraciones adicionales.
+    .card-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      position: relative;
+      padding-bottom: 0.8rem;
+
+      /// Línea decorativa debajo del título.
+      &amp;::after {
+        content: &#39;&#39;;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: $caracteristicas-button-primary; // Color tomado de las variables
+        border-radius: 3px;
+      }
+    }
+
+    /// Estilo para el texto de las tarjetas.
+    .card-text {
+      color: #566a88;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /// Estilo para los botones dentro de las tarjetas.
+    /// Incluye efectos de sombra, transiciones y variantes personalizadas (`btn-primary` y `btn-outline-primary`).
+    .btn {
+      border-radius: 30px;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      /// Efecto sombreado al hacer hover (con un efecto gradual).
+      &amp;::after {
+        content: &#39;&#39;;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.1);
+        transition: width 0.3s ease;
+        z-index: 0;
+        border-radius: inherit;
+      }
+
+      /// Transición para mostrar la sombra al hacer hover.
+      &amp;:hover::after {
+        width: 100%;
+      }
+
+      /// Incluye un gradiente de fondo y sombras personalizadas.
+      &amp;.btn-primary {
+        background: $caracteristicas-button-gradient;
+        border: none;
+        box-shadow: 0 4px 15px rgba(58, 123, 213, 0.4);
+
+        /// Efecto hover para elevar ligeramente el botón.
+        &amp;:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(58, 123, 213, 0.6);
+        }
+
+        /// Efecto al mantener presionado.
+        &amp;:active {
+          transform: translateY(1px);
+        }
+      }
+
+
+      ///Gradiente de contorno y adaptación de colores en hover.
+      &amp;.btn-outline-primary {
+        background: $caracteristicas-outline-gradient;
+        border: 2px solid transparent;
+        color: $caracteristicas-button-primary;
+
+        /// Cambios en hover:
+        /// - Color más oscuro para el texto.
+        /// - Elevación opcional.
+        &amp;:hover {
+          color: darken($caracteristicas-button-primary, 10%);
+          box-shadow: 0 5px 15px rgba(58, 123, 213, 0.2);
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}</code>" data-collapsed="#caracteristicas { ... }"><code>#caracteristicas { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la sección de &quot;Características&quot;.</p><ul><li>Usamos <code>flex-center</code> para centrar el contenido.</li><li>Se estructuran tarjetas (<code>.card</code>) con efectos de hover, sombras, y contenido dinámico.</li></ul></div></section></section></section><section class="main__section"><h1 class="main__heading" id="carousel section"><div class="container">carousel section</div></h1><section class="main__sub-section" id="carousel section-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="carousel section-css-.carousel"><h3 class="item__heading"><a class="item__name" href="#carousel section-css-.carousel">.carousel</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.carousel {
+  /// Estilo para el contenedor interno del carrusel.
+  /// - Se añaden bordes redondeados y un efecto de &quot;ocultar desbordamiento&quot; para las imágenes u otros contenidos.
+  &amp;-inner {
+    border-radius: 2rem; // Bordes redondeados
+    overflow: hidden; // Oculta contenido que desborda
+  }
+
+  /// Estilo para los items del carrusel.
+  /// - Se define una transición suave al moverse los items.
+  &amp;-item {
+    transition: transform 0.6s ease-in-out; // Transición para el movimiento del carrusel
+
+    /// Estilo para las tarjetas (`card`) dentro de los items del carrusel.
+    /// - Las tarjetas tienen un efecto &quot;zoom&quot; al hacer hover.
+    .card {
+      transform: scale(0.95); // Tamaño inicial reducido
+      transition: transform 0.3s ease; // Transición suave de transformación
+
+      /// Efecto `hover` en las tarjetas.
+      /// - Se escala a un tamaño normal (efecto zoom).
+      &amp;:hover {
+        transform: scale(1);
+      }
+
+      /// Estilo para las imágenes dentro de las tarjetas del carrusel.
+      /// - Se aplica un filtro de brillo a las imágenes.
+      img {
+        filter: brightness(0.9); // Brillo inicial atenuado
+        transition: filter 0.3s ease; // Transición suave en el filtro aplicado
+
+        /// Efecto `hover` en las imágenes.
+        /// - Aumenta el brillo y la saturación para colores más vivos.
+        &amp;:hover {
+          filter: brightness(1.1) saturate(1.5); // Efecto brillo y saturación
+        }
+      }
+    }
+  }
+}</code>" data-collapsed=".carousel { ... }"><code>.carousel { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Modificaciones al diseño del componente <code>carousel</code> de Bootstrap.</p><ul><li>Redefinimos estilos de elementos internos del carrusel (como bordes y transiciones).</li><li>Personalización de los elementos <code>card</code> utilizados dentro de los items.</li><li>Efectos de hover para imágenes y elementos del carrusel.</li></ul></div></section></section></section><section class="main__section"><h1 class="main__heading" id="components"><div class="container">components</div></h1><section class="main__sub-section" id="components-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="components-mixin-testimonial-component"><h3 class="item__heading"><a class="item__name" href="#components-mixin-testimonial-component">testimonial-component</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin testimonial-component() { 
+  #opiniones {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+
+    h2 {
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+      position: relative;
+      display: inline-block;
+
+      &amp;::after {
+        content: &#39;&#39;;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: map-get($colors, &#39;primary&#39;);
+        border-radius: 3px;
+      }
+    }
+
+    // Configuración del carrusel y tarjetas de testimonios.
+    #testimonialCarousel {
+      .carousel-inner {
+        padding: 1rem 0;
+      }
+
+      .card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: auto;
+
+        &amp;:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+ }" data-collapsed="@mixin testimonial-component() { ... }"><code>@mixin testimonial-component() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Diseña el componente de sección de testimonios con estilo y efectos de hover.</p><p>Este mixin organiza el diseño responsivo del carrusel de testimonios, incluyendo estilos personalizados para elementos como <code>h2</code>, tarjetas, controles del carrusel e indicadores.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-colors"><code>colors</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="footer"><div class="container">footer</div></h1><section class="main__sub-section" id="footer-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="footer-css-footer"><h3 class="item__heading"><a class="item__name" href="#footer-css-footer">footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>footer {
+  /// Altura del footer definida dinámicamente desde `$sizes`.
+  height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text {
+    margin-top: 0.5rem !important; // Espaciado superior
+    font-size: fluid-size(14, 18) !important; // Tamaño responsivo del texto
+  }
+
+  /// Estilos para íconos de Bootstrap (`.bi`) utilizados en el footer.
+  /// Define tamaños de fuente adaptativos.
+  /// @link ../componentes/footer#icons
+  .bi {
+    font-size: fluid-size(15, 18) !important; // Tamaño responsivo de los íconos
+  }
+
+  /// Reglas específicas para pantallas medianas (`md`) y mayores.
+  /// Define estilos personalizados para botones flotantes.
+  /// @see respond-to mixin
+  @include respond-to(&#39;md&#39;) {
+    /// Estilos para botones flotantes (`.btn-floating`) dentro del footer.
+    /// Ajusta el tamaño de fuente y el relleno para pantallas medianas.
+    /// @link ../componentes/footer#btn-floating
+    .btn-floating {
+      font-size: 0.7rem; // Tamaño de letra reducido para botones flotantes
+      padding: 0.3rem 0.5rem; // Relleno reducido
+    }
+  }
+}</code>" data-collapsed="footer { ... }"><code>footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para el componente <code>footer</code>. Configura altura, colores y estilos específicos para texto, íconos y botones.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="functions"><div class="container">functions</div></h1><section class="main__sub-section" id="functions-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="functions-function-fluid-size"><h3 class="item__heading"><a class="item__name" href="#functions-function-fluid-size">fluid-size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function fluid-size($min-size, $max-size, $min-width, $max-width) { 
+    // Convertir valores a números sin unidades si es necesario
+    $min-size-num: if(unitless($min-size), $min-size, $min-size / (1px));
+    $max-size-num: if(unitless($max-size), $max-size, $max-size / (1px));
+
+    // Calcular la pendiente para las variaciones de tamaño
+    $slope: math.div($max-size-num - $min-size-num, $max-width - $min-width);
+
+    // Calcular la intersección para determinar el ajuste dinámico
+    $y-intersect: $min-size-num - ($slope * $min-width);
+
+    // Devuelve un tamaño adaptativo utilizando clamp
+    @return clamp(#{$min-size-num}px, calc(#{$y-intersect}px + #{$slope * 100}vw), #{$max-size-num}px);
+ }" data-collapsed="@function fluid-size($min-size, $max-size, $min-width, $max-width) { ... }"><code>@function fluid-size($min-size, $max-size, $min-width, $max-width) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para calcular un tamaño de fuente responsive utilizando la técnica de <code>clamp</code>. Genera tamaños de fuente adaptativos basados en un rango de tamaños y anchos de viewport.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$min-size</code></th><td data-label="desc"><p>Tamaño mínimo del texto.</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$max-size</code></th><td data-label="desc"><p>Tamaño máximo del texto.</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$min-width</code></th><td data-label="desc"><p>Ancho mínimo del viewport (por defecto, 320px).</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$max-width</code></th><td data-label="desc"><p>Ancho máximo del viewport (por defecto, 1200px).</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>String</code> &mdash;<p>Devuelve el valor CSS con la función <code>clamp</code> para tamaños adaptativos.</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-navigation"><code>navigation</code></a></li></ul></section><section class="main__item container item" id="functions-function-ensure-contrast"><h3 class="item__heading"><a class="item__name" href="#functions-function-ensure-contrast">ensure-contrast</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function ensure-contrast($color, $background, $minimum) { 
+    // Calculamos las luminosidades relativas
+    $color-lightness: lightness($color);
+    $background-lightness: lightness($background);
+
+    // Calculamos el contraste
+    $contrast: abs($color-lightness - $background-lightness);
+
+    // Si el contraste no alcanza el mínimo, ajustamos el color
+    @if $contrast &lt; $minimum {
+        @return darken($color, percentage($minimum - $contrast)); // Ajuste usando darken
+    }
+
+    // Devuelve el color original si cumple el contraste
+    @return $color;
+ }" data-collapsed="@function ensure-contrast($color, $background, $minimum) { ... }"><code>@function ensure-contrast($color, $background, $minimum) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para asegurar contraste entre un color y su fondo. Si el contraste no cumple el nivel mínimo especificado, ajusta el color. Usa la luminosidad relativa para el cálculo.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>Color principal a evaluar.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background</code></th><td data-label="desc"><p>Color de fondo (por defecto, blanco).</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$minimum</code></th><td data-label="desc"><p>Nivel mínimo de contraste (por defecto, 4.5).</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code> &mdash;<p>Devuelve el color ajustado si no cumple con el contraste.</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-navigation"><code>navigation</code></a></li></ul></section><section class="main__item container item" id="functions-function-random-color"><h3 class="item__heading"><a class="item__name" href="#functions-function-random-color">random-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function random-color($palette) { 
+    // Obtener el color base desde el mapa de colores
+    $base-color: map-get($colors, $palette);
+
+    // Generar una variación aleatoria en el rango [-15, 15]
+    $variation: random(30) - 15;
+
+    // Ajustar el tono del color base y devolverlo
+    @return adjust-hue($base-color, $variation);
+ }" data-collapsed="@function random-color($palette) { ... }"><code>@function random-color($palette) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para obtener un color aleatorio basado en una paleta. Toma un color base del mapa <code>$colors</code> y genera variaciones del tono.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$palette</code></th><td data-label="desc"><p>Nombre de la paleta/color base en el mapa <code>$colors</code>.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code> &mdash;<p>Devuelve un color aleatorio derivado de la paleta.</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-colors"><code>colors</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-navigation"><code>navigation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-hover-effect"><code>hover-effect</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-dynamic-gradient"><code>dynamic-gradient</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-dynamic-gradient"><code>dynamic-gradient</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="global"><div class="container">global</div></h1><section class="main__sub-section" id="global-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="global-css-*,
+*::after,
+*::before"><h3 class="item__heading"><a class="item__name" href="#global-css-*,
+*::after,
+*::before">*, *::after, *::before</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>*,
+*::after,
+*::before {
+  margin: 0;
+    padding: 0;
+    font-family: map-get($fonts, &#39;primary&#39;); // Variable que contiene la familia tipográfica.
+}</code>" data-collapsed="*,
+*::after,
+*::before { ... }"><code>*,
+*::after,
+*::before { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Aplicamos un estilo global para resetear márgenes y paddings a todos los selectores (<em>), pseudo-elementos (</em>::after, *::before). También aplicamos la fuente definida en <code>variables</code>.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="header"><div class="container">header</div></h1><section class="main__sub-section" id="header-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="header-css-.header"><h3 class="item__heading"><a class="item__name" href="#header-css-.header">.header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.header {
+  /// Define una transición suave para la propiedad `top`.
+    /// Esto es útil para efectos como ocultar o mostrar la cabecera dinámicamente.
+    transition: top 0.3s ease-in-out; // Transición suave para cambios en la posición superior
+
+    /// La cabecera está fija en la parte superior de la página.
+    position: fixed; // Posición fija
+    top: 0; // Ubicación fija en la parte superior de la ventana
+
+    /// La cabecera ocupa todo el ancho del viewport.
+    width: 100%; // Ancho completo de la página
+
+    /// Define un alto índice de apilamiento para que el header siempre esté sobre otros elementos.
+    z-index: 1000; // Asegura que la cabecera esté al frente de otros elementos
+
+    /// Configuración del color de fondo desde las variables globales.
+    /// El color de fondo se toma de la clave `background` en la variable `$colors`.
+    background-color: map-get($colors, &#39;background&#39;); // Fondo consistente con la configuración global
+}</code>" data-collapsed=".header { ... }"><code>.header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para el componente <code>header</code>. Este componente define una cabecera fija, con transición y compatibilidad con capas de contenido.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="hero section"><div class="container">hero section</div></h1><section class="main__sub-section" id="hero section-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="hero section-css-.hero"><h3 class="item__heading"><a class="item__name" href="#hero section-css-.hero">.hero</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.hero {
+  transition: margin-top 0.3s ease-in-out; // Transición suave para desplazamientos verticales
+  background-image: url(&#39;../../assets/img/restaurantes.gif&#39;); // Imagen de fondo
+  background-size: cover; // Imagen ajustada a cubrir todo el área
+  background-position: center; // Posición centrada de la imagen
+  height: calc(100vh - map-get($sizes, &#39;header-height&#39;)); // Altura de la ventana menos el header
+  position: relative; // Para posicionar elementos hijos de forma absoluta
+
+  /// Superposición de fondo semitransparente.
+  /// - Esto crea un efecto de oscurecimiento encima de la imagen.
+  &amp;::before {
+    content: &#39;&#39;; // Elemento vacío para la superposición
+    position: absolute; // Se coloca encima del elemento padre
+    inset: 0; // Ocupa toda el área del contenedor
+    background: rgba(0, 0, 0, 0.5); // Fondo negro con 50% de opacidad
+  }
+
+  /// Contenedor interno de la sección `hero`.
+  /// - Posiciona los elementos centrados dentro de la sección.
+  .container {
+    position: relative; // Conserva su relación con el contenedor principal
+    z-index: 1; // Asegura que está encima de la superposición
+    @include flex-center; // Centra elementos en posición horizontal y vertical
+    flex-direction: column; // Apila los elementos verticalmente
+  }
+}</code>" data-collapsed=".hero { ... }"><code>.hero { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para la sección <code>hero</code>.</p><ul><li>Aplica una imagen de fondo ocupando toda la altura menos el header.</li><li>Incluye un efecto de superposición oscurecida.</li></ul></div></section></section></section><section class="main__section"><h1 class="main__heading" id="main"><div class="container">main</div></h1><section class="main__sub-section" id="main-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="main-css-main"><h3 class="item__heading"><a class="item__name" href="#main-css-main">main</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>main {
+  /// Define una transición suave para la propiedad `top`.
+  /// Útil para efectos dinámicos en la posición del elemento principal.
+  transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}</code>" data-collapsed="main { ... }"><code>main { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para el elemento principal (<code>main</code>). Se aplican transiciones suaves para ajustes dinámicos de la posición.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="mixins"><div class="container">mixins</div></h1><section class="main__sub-section" id="mixins-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="mixins-mixin-respond-to"><h3 class="item__heading"><a class="item__name" href="#mixins-mixin-respond-to">respond-to</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin respond-to($breakpoint) { 
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+ }" data-collapsed="@mixin respond-to($breakpoint) { ... }"><code>@mixin respond-to($breakpoint) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para manejar consultas responsivas basado en los <code>breakpoints</code>. Permite aplicar estilos condicionales según tamaños de pantalla.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$breakpoint</code></th><td data-label="desc"><p>Nombre del breakpoint definido en <code>$breakpoints</code>.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-breakpoints"><code>breakpoints</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-breakpoints"><code>breakpoints</code></a></li></ul></section><section class="main__item container item" id="mixins-mixin-flex-center"><h3 class="item__heading"><a class="item__name" href="#mixins-mixin-flex-center">flex-center</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex-center() { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }" data-collapsed="@mixin flex-center() { ... }"><code>@mixin flex-center() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para centrar elementos utilizando flexbox. Aplica <code>display: flex</code>, <code>align-items: center</code> y <code>justify-content: center</code>.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section><section class="main__item container item" id="mixins-mixin-flexposition"><h3 class="item__heading"><a class="item__name" href="#mixins-mixin-flexposition">flexposition</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flexposition($direccion, $justification, $align) { 
+  display: flex;
+  flex-direction: $direccion;
+  align-items: $align;
+  justify-content: $justification;
+ }" data-collapsed="@mixin flexposition($direccion, $justification, $align) { ... }"><code>@mixin flexposition($direccion, $justification, $align) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para establecer configuraciones flexibles de direcciones y alineamientos.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direccion</code></th><td data-label="desc"><p>Dirección del flexbox (por defecto, <code>row</code>).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$justification</code></th><td data-label="desc"><p>Justificación del contenido (por defecto, <code>center</code>).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$align</code></th><td data-label="desc"><p>Alineación de los ítems (por defecto, <code>center</code>).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-navigation"><code>navigation</code></a></li></ul></section><section class="main__item container item" id="mixins-mixin-button-variant"><h3 class="item__heading"><a class="item__name" href="#mixins-mixin-button-variant">button-variant</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-variant($background, $border, $hover-background, $hover-border) { 
+  background-color: $background;
+  border: 1px solid $border;
+
+  &amp;:hover {
+    background-color: $hover-background;
+    border-color: $hover-border;
+  }
+ }" data-collapsed="@mixin button-variant($background, $border, $hover-background, $hover-border) { ... }"><code>@mixin button-variant($background, $border, $hover-background, $hover-border) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para definir variantes fáciles de botones.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$background</code></th><td data-label="desc"><p>Color de fondo.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$border</code></th><td data-label="desc"><p>Color del borde.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-background</code></th><td data-label="desc"><p>Color de fondo al pasar el cursor.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-border</code></th><td data-label="desc"><p>Color del borde al pasar el cursor.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="mixins-mixin-navigation"><h3 class="item__heading"><a class="item__name" href="#mixins-mixin-navigation">navigation</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin navigation($direction, $spacing) { 
+  @include flexposition($direction, $spacing);
+
+  &amp;-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: fluid-size(16px, 30px);
+  }
+
+  &amp;-item {
+    list-style: none;
+    font-size: fluid-size(14, 20);
+    transition: transform 0.3s ease;
+
+    &amp;:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &amp;-link {
+    text-decoration: none !important;
+    color: ensure-contrast(random-color(&#39;primary&#39;));
+    position: relative;
+
+    &amp;::after {
+      content: &#39;&#39;;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: random-color(&#39;secondary&#39;);
+      transition: width 0.3s ease;
+    }
+
+    &amp;:hover::after {
+      width: 100%;
+    }
+  }
+ }" data-collapsed="@mixin navigation($direction, $spacing) { ... }"><code>@mixin navigation($direction, $spacing) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para aplicar configuraciones de navegación.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>Dirección de los elementos (por defecto, <code>row</code>).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$spacing</code></th><td data-label="desc"><p>Espaciado entre los elementos (por defecto, <code>space-around</code>).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-flexposition"><code>flexposition</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#functions-function-fluid-size"><code>fluid-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#functions-function-fluid-size"><code>fluid-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#functions-function-ensure-contrast"><code>ensure-contrast</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#functions-function-random-color"><code>random-color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#functions-function-random-color"><code>random-color</code></a></li></ul></section><section class="main__item container item" id="mixins-mixin-hover-effect"><h3 class="item__heading"><a class="item__name" href="#mixins-mixin-hover-effect">hover-effect</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin hover-effect($type) { 
+  transition: all 0.3s ease;
+
+  @if $type == &#39;scale&#39; {
+    &amp;:hover {
+      transform: scale(1.05);
+    }
+  } @else if $type == &#39;lift&#39; {
+    &amp;:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  } @else if $type == &#39;glow&#39; {
+    &amp;:hover {
+      box-shadow: 0 0 15px random-color(&#39;primary&#39;);
+    }
+  }
+ }" data-collapsed="@mixin hover-effect($type) { ... }"><code>@mixin hover-effect($type) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para aplicar efectos de hover elegantes.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$type</code></th><td data-label="desc"><p>Tipo de efecto (<code>scale</code>, <code>lift</code>, <code>glow</code>).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#functions-function-random-color"><code>random-color</code></a></li></ul><h3 class="item__sub-heading">See</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-hover-effect"><code>hover-effect</code></a></li></ul></section><section class="main__item container item" id="mixins--mixin-dynamic-gradient"><h3 class="item__heading"><a class="item__name" href="#mixins-mixin-dynamic-gradient">dynamic-gradient</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin dynamic-gradient($direction) { 
+  $color1: random-color(&#39;primary&#39;);
+  $color2: random-color(&#39;secondary&#39;);
+  background: linear-gradient($direction, $color1, $color2);
+  transition: background 0.5s ease;
+
+  &amp;:hover {
+    background: linear-gradient($direction, $color2, $color1);
+  }
+ }" data-collapsed="@mixin dynamic-gradient($direction) { ... }"><code>@mixin dynamic-gradient($direction) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para generar gradientes dinámicos basados en colores de la paleta.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>Dirección del gradiente (por defecto, <code>45deg</code>).</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#functions-function-random-color"><code>random-color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#functions-function-random-color"><code>random-color</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="navigation"><div class="container">navigation</div></h1><section class="main__sub-section" id="navigation-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="navigation-css-.navbar"><h3 class="item__heading"><a class="item__name" href="#navigation-css-.navbar">.navbar</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.navbar {
+  /// Incluye el mixin `navigation` para configurar estilos básicos de navegación.
+    /// Además, aplica un gradiente dinámico (a través de `dynamic-gradient`).
+    /// Define la altura mínima de la navbar de acuerdo con la variable `$sizes[&#39;header-height&#39;]`.
+    @include navigation;
+    @include dynamic-gradient;
+    min-height: map-get($sizes, &#39;header-height&#39;); // Altura mínima de la barra de navegación
+    padding: fluid-size(10px, 15px) !important;  // Padding adaptativo utilizando `fluid-size`
+    font-family: map-get($fonts, &#39;primary&#39;) !important;
+
+    /// Estilos para la marca dentro de la navbar (`.navbar-brand`).
+    /// @link ../componentes/navbar#navbar-brand
+    &amp;-brand {
+        /// Aplica un efecto de hover &quot;lift&quot; a la marca principal.
+        /// @see hover-effect mixin
+        @include hover-effect(&#39;lift&#39;);
+
+        /// Configuración del logotipo dentro de `.navbar-brand`.
+        /// Define su tamaño.
+        /// @link ../componentes/navbar#navbar-logo
+        .navbar-logo {
+            width: 30px; // Ancho del logotipo
+            height: 30px; // Alto del logotipo
+        }
+    }
+
+    /// Estilos para la navegación principal dentro de la navbar (`.navbar-nav`).
+    /// Aplica un espaciado fluido entre elementos de navegación.
+    /// @link ../componentes/navbar#navbar-nav
+    &amp;-nav {
+        gap: fluid-size(10px, 20px) !important; // Espaciado fluido entre elementos
+    }
+
+    /// Estilo general para los logotipos.
+    /// Utilizados en diversos componentes dentro de `.navbar`.
+    /// @link ../componentes/logo
+    .logo {
+        width: 2rem; // Ancho del logotipo
+        height: 2.5rem; // Alto del logotipo
+    }
+
+    /// Estilo para los elementos individuales de navegación (`.nav-item`).
+    /// Aplica un efecto de hover &quot;lift&quot;.
+    /// @link ../componentes/navbar#nav-item
+    .nav-item {
+        @include hover-effect(&#39;lift&#39;); // Efecto de hover &quot;lift&quot; al pasar el cursor
+    }
+
+    /// Estilos para los enlaces dentro de la barra de navegación (`.nav-link`).
+    /// Define un tamaño de fuente fluido que se adapta al tamaño de pantalla.
+    /// @link ../componentes/navbar#nav-link
+    .nav-link {
+        font-size: fluid-size(14px, 20px) !important; // Tamaño adaptativo del texto
+    }
+}</code>" data-collapsed=".navbar { ... }"><code>.navbar { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para la barra de navegación (<code>.navbar</code>). Incluye estilos generales y variantes específicas para las marcas, logos, enlaces, y elementos de navegación.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="popover"><div class="container">popover</div></h1><section class="main__sub-section" id="popover-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="popover-css-.popover"><h3 class="item__heading"><a class="item__name" href="#popover-css-.popover">.popover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.popover {
+  /// Aplica un efecto de desenfoque al fondo del `popover`.
+  backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header {
+    background: linear-gradient(
+                    45deg,
+                    map-get($colors, &#39;primary&#39;), // Color primario desde `$colors`
+                    darken(map-get($colors, &#39;primary&#39;), 10%) // Oscurecimiento del color primario
+    );
+    color: white !important; // Texto blanco
+    border: none; // Sin bordes para el encabezado
+  }
+
+  /// Estilos para el cuerpo del `popover` (`.popover-body`).
+  /// Define el tamaño del texto y la altura de línea.
+  /// @link ../componentes/popover#popover-body
+  &amp;-body {
+    font-size: 0.9rem; // Tamaño del texto
+    line-height: 1.6; // Mejor legibilidad con mayor altura de las líneas
+  }
+
+  /// Estilos para un `popover` con clase adicional personalizada (`.custom-popover`).
+  /// Aplica una animación de entrada/salida suave.
+  /// @link ../componentes/popover#custom-popover
+  &amp;.custom-popover {
+    animation: popoverFade 0.3s ease-in-out; // Animación personalizada
+  }
+}</code>" data-collapsed=".popover { ... }"><code>.popover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para el componente de <code>popover</code>. Ajusta el fondo, aplica un efecto de desenfoque y define estilos adicionales para su encabezado, cuerpo y variantes.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="testimonials"><div class="container">testimonials</div></h1><section class="main__sub-section" id="testimonials-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="testimonials-css-#testimonialCarousel"><h3 class="item__heading"><a class="item__name" href="#testimonials-css-#testimonialCarousel">#testimonialCarousel</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#testimonialCarousel {
+  /// Estilos para las tarjetas (`.card`) dentro del carrusel.
+  .card {
+    height: 11.25rem; // Altura predeterminada para las tarjetas
+
+    /// Estilos para las imágenes dentro de las tarjetas.
+    /// - La imagen cubre todo el área de la tarjeta respetando proporciones.
+    img {
+      height: 100%; // Altura completa de la tarjeta
+      object-fit: cover; // Ajusta la imagen dentro de su contenedor
+    }
+  }
+
+  /// Estilos responsivos aplicados en puntos de quiebre &#39;md&#39; (medianos).
+  /// Ajusta la altura de las tarjetas y la anchura de las imágenes.
+  /// @see respond-to mixin
+  @include respond-to(&#39;md&#39;) {
+    .card {
+      height: 13.5rem; // Altura ajustada para pantallas medianas
+
+      img {
+        width: 100%; // La imagen ocupará el ancho completo del contenedor
+      }
+    }
+  }
+}</code>" data-collapsed="#testimonialCarousel { ... }"><code>#testimonialCarousel { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el carrusel de testimonios (<code>#testimonialCarousel</code>). Contiene configuraciones específicas para las tarjetas dentro del carrusel.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-body"><h3 class="item__heading"><a class="item__name" href="#undefined-css-body">body</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>body {
+  transition: padding-top 0.8s ease-in-out, margin-top 0.9s ease-in-out;
+    font-family: map-get($fonts, &#39;secondary&#39;); // Fuente secundaria: Monserrat.
+    background-color: map-get($colors, &#39;background&#39;); // Color de fondo.
+    color: map-get($colors, &#39;text&#39;); // Color de texto.
+    padding-top: map-get($sizes, &#39;header-height&#39;); // Altura del header (padding-top).
+}</code>" data-collapsed="body { ... }"><code>body { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Configuración de estilos generales para el body</p><ul><li>Transiciones suaves en padding-top y margin-top con distintas duraciones.</li><li>Se utiliza la fuente definida en la variable <code>font-family</code>.</li><li>Se aplican colores del mapa <code>$colors</code>:<ul><li>Fondo: <code>background</code>.</li><li>Color de texto: <code>text</code>.</li></ul></li></ul></div></section><section class="main__item container item" id="undefined-css-h1"><h3 class="item__heading"><a class="item__name" href="#undefined-css-h1">h1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>h1 {
+  font-family: map-get($fonts, &#39;primary&#39;) !important; // Fuente principal: Roboto
+    color: map-get($colors, &#39;title&#39;) !important; // Color primario para encabezados
+}</code>" data-collapsed="h1 { ... }"><code>h1 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Personalización para los encabezados (h1-h6). En este caso, aplicamos la fuente primaria a los encabezados.</p></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#undefined-css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  font-family: map-get($fonts, &#39;secondary&#39;) !important; // Fuente secundaria: Monserrat
+    font-size: fluid-size(15px, 20px) !important;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Personalización para los párrafos.</p><ul><li>Se aplican fuentes del mapa <code>$fonts</code></li><li>Se aplica fluid-size para el tamaño</li></ul></div></section><section class="main__item container item" id="undefined-css-&amp;-primary"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-primary">&amp;-primary</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-primary {
+  /// Modificación del botón primario de Bootstrap utilizando `button-variant`.
+    /// Se definen:
+    /// - Fondo del botón y borde: `$colors[&#39;button&#39;]`.
+    /// - Fondo y borde al hacer hover: Colores más oscuros.
+    @include button-variant(
+            $background: map-get($colors, &#39;button&#39;),
+            $border: map-get($colors, &#39;button&#39;),
+            $hover-background: darken(map-get($colors, &#39;button&#39;), 15%), // Fondo más oscuro en hover
+            $hover-border: darken(map-get($colors, &#39;button&#39;), 20%) // Borde más oscuro en hover
+    );
+
+    /// Aplica un efecto de brillo y resaltado al pasar el cursor.
+    /// @see hover-effect mixin
+    @include hover-effect(&#39;glow&#39;);
+
+    /// Garantiza un contraste adecuado al asignar un color aleatorio.
+    /// Usa la función `random-color` para obtener un color.
+    /// @see random-color function
+    background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active {
+      background-color: map-get($colors, &#39;primary&#39;) !important; // Color primario forzado
+      border-color: #000 !important; // Borde negro
+      box-shadow: none !important; // Elimina sombras
+    }
+
+    /// Efectos al pasar el cursor en el botón:
+    /// - Sombra adicional.
+    /// - Pequeño movimiento hacia arriba.
+    &amp;:hover {
+      transform: translateY(-2px); // Eleva el botón 2px
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2); // Agrega sombra suave
+    }
+}</code>" data-collapsed="&amp;-primary { ... }"><code>&amp;-primary { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los botones primarios. Incluyen variantes de color para hover y active.</p></div></section><section class="main__item container item" id="undefined-css-background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active"><h3 class="item__heading"><a class="item__name" href="#undefined-css-background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active">background-color: ensure-contrast(random-color(&#39;primary&#39;)); /// Modificación específica para el estado `active` del botón. /// Sobrescribe valores por defecto de Bootstrap con `!important`. &amp;:active</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active {
+  background-color: map-get($colors, &#39;primary&#39;) !important; // Color primario forzado
+      border-color: #000 !important; // Borde negro
+      box-shadow: none !important; // Elimina sombras
+}</code>" data-collapsed="background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active { ... }"><code>background-color: ensure-contrast(random-color(&#39;primary&#39;));
+
+    /// Modificación específica para el estado `active` del botón.
+    /// Sobrescribe valores por defecto de Bootstrap con `!important`.
+    &amp;:active { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Garantiza un contraste adecuado al asignar un color aleatorio. Usa la función <code>random-color</code> para obtener un color. @see random-color function</p></div></section><section class="main__item container item" id="undefined-css-&amp;:active"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:active">&amp;:active</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:active {
+  background-color: map-get($colors, &#39;primary&#39;) !important; // Color primario forzado
+      border-color: #000 !important; // Borde negro
+      box-shadow: none !important; // Elimina sombras
+}</code>" data-collapsed="&amp;:active { ... }"><code>&amp;:active { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Modificación específica para el estado <code>active</code> del botón. Sobrescribe valores por defecto de Bootstrap con <code>!important</code>.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  transform: translateY(-2px); // Eleva el botón 2px
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2); // Agrega sombra suave
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Efectos al pasar el cursor en el botón: - Sombra adicional. - Pequeño movimiento hacia arriba.</p></div></section><section class="main__item container item" id="undefined-css-.card"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.card">.card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card {
+  background: $card-gradient; // Gradiente establecido en variables
+    border: none;
+    border-radius: $card-border-radius; // Radio del borde
+    box-shadow: $card-shadow; // Sombra personalizada
+    transition: $card-transition; // Transición definida en las variables
+    overflow: hidden; // Oculta contenidos desbordados
+    position: relative;
+
+    /// Línea superior decorativa como gradiente.
+    &amp;::before {
+      content: &#39;&#39;;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, #4a5568, #6c757d); // Gradiente decorativo
+      opacity: 0.8;
+    }
+
+    /// Efecto de Hover para la tarjeta:
+    /// - Aumenta el tamaño con una transformación.
+    /// - Aplica una sombra más pronunciada.
+    &amp;:hover {
+      transform: $card-hover-transform; // Transformación en hover definida en variables
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); // Más sombra en hover.
+    }
+
+    /// Configuración específica para dispositivos medianos en adelante.
+    @include respond-to(&#39;md&#39;) {
+      min-height: 320px;
+    }
+
+    /// Estilización para el contenido interno de las tarjetas.
+    .card-body {
+      padding: 1.8rem; // Padding interno
+    }
+
+    /// Diseño del título dentro de las tarjetas.
+    /// Incluye fuente en negrita y decoraciones adicionales.
+    .card-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      position: relative;
+      padding-bottom: 0.8rem;
+
+      /// Línea decorativa debajo del título.
+      &amp;::after {
+        content: &#39;&#39;;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: $caracteristicas-button-primary; // Color tomado de las variables
+        border-radius: 3px;
+      }
+    }
+
+    /// Estilo para el texto de las tarjetas.
+    .card-text {
+      color: #566a88;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /// Estilo para los botones dentro de las tarjetas.
+    /// Incluye efectos de sombra, transiciones y variantes personalizadas (`btn-primary` y `btn-outline-primary`).
+    .btn {
+      border-radius: 30px;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      /// Efecto sombreado al hacer hover (con un efecto gradual).
+      &amp;::after {
+        content: &#39;&#39;;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.1);
+        transition: width 0.3s ease;
+        z-index: 0;
+        border-radius: inherit;
+      }
+
+      /// Transición para mostrar la sombra al hacer hover.
+      &amp;:hover::after {
+        width: 100%;
+      }
+
+      /// Incluye un gradiente de fondo y sombras personalizadas.
+      &amp;.btn-primary {
+        background: $caracteristicas-button-gradient;
+        border: none;
+        box-shadow: 0 4px 15px rgba(58, 123, 213, 0.4);
+
+        /// Efecto hover para elevar ligeramente el botón.
+        &amp;:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(58, 123, 213, 0.6);
+        }
+
+        /// Efecto al mantener presionado.
+        &amp;:active {
+          transform: translateY(1px);
+        }
+      }
+
+
+      ///Gradiente de contorno y adaptación de colores en hover.
+      &amp;.btn-outline-primary {
+        background: $caracteristicas-outline-gradient;
+        border: 2px solid transparent;
+        color: $caracteristicas-button-primary;
+
+        /// Cambios en hover:
+        /// - Color más oscuro para el texto.
+        /// - Elevación opcional.
+        &amp;:hover {
+          color: darken($caracteristicas-button-primary, 10%);
+          box-shadow: 0 5px 15px rgba(58, 123, 213, 0.2);
+          transform: translateY(-2px);
+        }
+      }
+    }
+}</code>" data-collapsed=".card { ... }"><code>.card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilización para las tarjetas en la sección de características. Incluye gradientes, bordes redondeados y animaciones de hover.</p></div></section><section class="main__item container item" id="undefined-css-&amp;::before"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;::before">&amp;::before</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;::before {
+  content: &#39;&#39;;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, #4a5568, #6c757d); // Gradiente decorativo
+      opacity: 0.8;
+}</code>" data-collapsed="&amp;::before { ... }"><code>&amp;::before { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Línea superior decorativa como gradiente.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  transform: $card-hover-transform; // Transformación en hover definida en variables
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); // Más sombra en hover.
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Efecto de Hover para la tarjeta: - Aumenta el tamaño con una transformación. - Aplica una sombra más pronunciada.</p></div></section><section class="main__item container item" id="undefined-css-.card-body"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.card-body">.card-body</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card-body {
+  padding: 1.8rem; // Padding interno
+}</code>" data-collapsed=".card-body { ... }"><code>.card-body { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilización para el contenido interno de las tarjetas.</p></div></section><section class="main__item container item" id="undefined-css-.card-title"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.card-title">.card-title</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card-title {
+  font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      position: relative;
+      padding-bottom: 0.8rem;
+
+      /// Línea decorativa debajo del título.
+      &amp;::after {
+        content: &#39;&#39;;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: $caracteristicas-button-primary; // Color tomado de las variables
+        border-radius: 3px;
+      }
+}</code>" data-collapsed=".card-title { ... }"><code>.card-title { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Diseño del título dentro de las tarjetas. Incluye fuente en negrita y decoraciones adicionales.</p></div></section><section class="main__item container item" id="undefined-css-&amp;::after"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;::after">&amp;::after</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;::after {
+  content: &#39;&#39;;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: $caracteristicas-button-primary; // Color tomado de las variables
+        border-radius: 3px;
+}</code>" data-collapsed="&amp;::after { ... }"><code>&amp;::after { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Línea decorativa debajo del título.</p></div></section><section class="main__item container item" id="undefined-css-.card-text"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.card-text">.card-text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card-text {
+  color: #566a88;
+      font-size: 0.95rem;
+      line-height: 1.6;
+}</code>" data-collapsed=".card-text { ... }"><code>.card-text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para el texto de las tarjetas.</p></div></section><section class="main__item container item" id="undefined-css-.btn"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.btn">.btn</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.btn {
+  border-radius: 30px;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      /// Efecto sombreado al hacer hover (con un efecto gradual).
+      &amp;::after {
+        content: &#39;&#39;;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.1);
+        transition: width 0.3s ease;
+        z-index: 0;
+        border-radius: inherit;
+      }
+
+      /// Transición para mostrar la sombra al hacer hover.
+      &amp;:hover::after {
+        width: 100%;
+      }
+
+      /// Incluye un gradiente de fondo y sombras personalizadas.
+      &amp;.btn-primary {
+        background: $caracteristicas-button-gradient;
+        border: none;
+        box-shadow: 0 4px 15px rgba(58, 123, 213, 0.4);
+
+        /// Efecto hover para elevar ligeramente el botón.
+        &amp;:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(58, 123, 213, 0.6);
+        }
+
+        /// Efecto al mantener presionado.
+        &amp;:active {
+          transform: translateY(1px);
+        }
+      }
+
+
+      ///Gradiente de contorno y adaptación de colores en hover.
+      &amp;.btn-outline-primary {
+        background: $caracteristicas-outline-gradient;
+        border: 2px solid transparent;
+        color: $caracteristicas-button-primary;
+
+        /// Cambios en hover:
+        /// - Color más oscuro para el texto.
+        /// - Elevación opcional.
+        &amp;:hover {
+          color: darken($caracteristicas-button-primary, 10%);
+          box-shadow: 0 5px 15px rgba(58, 123, 213, 0.2);
+          transform: translateY(-2px);
+        }
+      }
+}</code>" data-collapsed=".btn { ... }"><code>.btn { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para los botones dentro de las tarjetas. Incluye efectos de sombra, transiciones y variantes personalizadas (<code>btn-primary</code> y <code>btn-outline-primary</code>).</p></div></section><section class="main__item container item" id="undefined-css-&amp;::after"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;::after">&amp;::after</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;::after {
+  content: &#39;&#39;;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.1);
+        transition: width 0.3s ease;
+        z-index: 0;
+        border-radius: inherit;
+}</code>" data-collapsed="&amp;::after { ... }"><code>&amp;::after { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Efecto sombreado al hacer hover (con un efecto gradual).</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover::after"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover::after">&amp;:hover::after</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover::after {
+  width: 100%;
+}</code>" data-collapsed="&amp;:hover::after { ... }"><code>&amp;:hover::after { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Transición para mostrar la sombra al hacer hover.</p></div></section><section class="main__item container item" id="undefined-css-&amp;.btn-primary"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;.btn-primary">&amp;.btn-primary</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;.btn-primary {
+  background: $caracteristicas-button-gradient;
+        border: none;
+        box-shadow: 0 4px 15px rgba(58, 123, 213, 0.4);
+
+        /// Efecto hover para elevar ligeramente el botón.
+        &amp;:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(58, 123, 213, 0.6);
+        }
+
+        /// Efecto al mantener presionado.
+        &amp;:active {
+          transform: translateY(1px);
+        }
+}</code>" data-collapsed="&amp;.btn-primary { ... }"><code>&amp;.btn-primary { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Incluye un gradiente de fondo y sombras personalizadas.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(58, 123, 213, 0.6);
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Efecto hover para elevar ligeramente el botón.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:active"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:active">&amp;:active</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:active {
+  transform: translateY(1px);
+}</code>" data-collapsed="&amp;:active { ... }"><code>&amp;:active { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Efecto al mantener presionado.</p></div></section><section class="main__item container item" id="undefined-css-&amp;.btn-outline-primary"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;.btn-outline-primary">&amp;.btn-outline-primary</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;.btn-outline-primary {
+  background: $caracteristicas-outline-gradient;
+        border: 2px solid transparent;
+        color: $caracteristicas-button-primary;
+
+        /// Cambios en hover:
+        /// - Color más oscuro para el texto.
+        /// - Elevación opcional.
+        &amp;:hover {
+          color: darken($caracteristicas-button-primary, 10%);
+          box-shadow: 0 5px 15px rgba(58, 123, 213, 0.2);
+          transform: translateY(-2px);
+        }
+}</code>" data-collapsed="&amp;.btn-outline-primary { ... }"><code>&amp;.btn-outline-primary { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Gradiente de contorno y adaptación de colores en hover.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  color: darken($caracteristicas-button-primary, 10%);
+          box-shadow: 0 5px 15px rgba(58, 123, 213, 0.2);
+          transform: translateY(-2px);
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Cambios en hover: - Color más oscuro para el texto. - Elevación opcional.</p></div></section><section class="main__item container item" id="undefined-css-&amp;-inner"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-inner">&amp;-inner</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-inner {
+  border-radius: 2rem; // Bordes redondeados
+    overflow: hidden; // Oculta contenido que desborda
+}</code>" data-collapsed="&amp;-inner { ... }"><code>&amp;-inner { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para el contenedor interno del carrusel.</p><ul><li>Se añaden bordes redondeados y un efecto de &quot;ocultar desbordamiento&quot; para las imágenes u otros contenidos.</li></ul></div></section><section class="main__item container item" id="undefined-css-&amp;-item"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-item">&amp;-item</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-item {
+  transition: transform 0.6s ease-in-out; // Transición para el movimiento del carrusel
+
+    /// Estilo para las tarjetas (`card`) dentro de los items del carrusel.
+    /// - Las tarjetas tienen un efecto &quot;zoom&quot; al hacer hover.
+    .card {
+      transform: scale(0.95); // Tamaño inicial reducido
+      transition: transform 0.3s ease; // Transición suave de transformación
+
+      /// Efecto `hover` en las tarjetas.
+      /// - Se escala a un tamaño normal (efecto zoom).
+      &amp;:hover {
+        transform: scale(1);
+      }
+
+      /// Estilo para las imágenes dentro de las tarjetas del carrusel.
+      /// - Se aplica un filtro de brillo a las imágenes.
+      img {
+        filter: brightness(0.9); // Brillo inicial atenuado
+        transition: filter 0.3s ease; // Transición suave en el filtro aplicado
+
+        /// Efecto `hover` en las imágenes.
+        /// - Aumenta el brillo y la saturación para colores más vivos.
+        &amp;:hover {
+          filter: brightness(1.1) saturate(1.5); // Efecto brillo y saturación
+        }
+      }
+    }
+}</code>" data-collapsed="&amp;-item { ... }"><code>&amp;-item { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para los items del carrusel.</p><ul><li>Se define una transición suave al moverse los items.</li></ul></div></section><section class="main__item container item" id="undefined-css-.card"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.card">.card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card {
+  transform: scale(0.95); // Tamaño inicial reducido
+      transition: transform 0.3s ease; // Transición suave de transformación
+
+      /// Efecto `hover` en las tarjetas.
+      /// - Se escala a un tamaño normal (efecto zoom).
+      &amp;:hover {
+        transform: scale(1);
+      }
+
+      /// Estilo para las imágenes dentro de las tarjetas del carrusel.
+      /// - Se aplica un filtro de brillo a las imágenes.
+      img {
+        filter: brightness(0.9); // Brillo inicial atenuado
+        transition: filter 0.3s ease; // Transición suave en el filtro aplicado
+
+        /// Efecto `hover` en las imágenes.
+        /// - Aumenta el brillo y la saturación para colores más vivos.
+        &amp;:hover {
+          filter: brightness(1.1) saturate(1.5); // Efecto brillo y saturación
+        }
+      }
+}</code>" data-collapsed=".card { ... }"><code>.card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para las tarjetas (<code>card</code>) dentro de los items del carrusel. - Las tarjetas tienen un efecto &quot;zoom&quot; al hacer hover.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  transform: scale(1);
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Efecto <code>hover</code> en las tarjetas. - Se escala a un tamaño normal (efecto zoom).</p></div></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#undefined-css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  filter: brightness(0.9); // Brillo inicial atenuado
+        transition: filter 0.3s ease; // Transición suave en el filtro aplicado
+
+        /// Efecto `hover` en las imágenes.
+        /// - Aumenta el brillo y la saturación para colores más vivos.
+        &amp;:hover {
+          filter: brightness(1.1) saturate(1.5); // Efecto brillo y saturación
+        }
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para las imágenes dentro de las tarjetas del carrusel. - Se aplica un filtro de brillo a las imágenes.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  filter: brightness(1.1) saturate(1.5); // Efecto brillo y saturación
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Efecto <code>hover</code> en las imágenes. - Aumenta el brillo y la saturación para colores más vivos.</p></div></section><section class="main__item container item" id="undefined-css-&amp;::before"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;::before">&amp;::before</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;::before {
+  content: &#39;&#39;; // Elemento vacío para la superposición
+    position: absolute; // Se coloca encima del elemento padre
+    inset: 0; // Ocupa toda el área del contenedor
+    background: rgba(0, 0, 0, 0.5); // Fondo negro con 50% de opacidad
+}</code>" data-collapsed="&amp;::before { ... }"><code>&amp;::before { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Superposición de fondo semitransparente.</p><ul><li>Esto crea un efecto de oscurecimiento encima de la imagen.</li></ul></div></section><section class="main__item container item" id="undefined-css-.container"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.container">.container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container {
+  position: relative; // Conserva su relación con el contenedor principal
+    z-index: 1; // Asegura que está encima de la superposición
+    @include flex-center; // Centra elementos en posición horizontal y vertical
+    flex-direction: column; // Apila los elementos verticalmente
+}</code>" data-collapsed=".container { ... }"><code>.container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor interno de la sección <code>hero</code>.</p><ul><li>Posiciona los elementos centrados dentro de la sección.</li></ul></div></section><section class="main__item container item" id="undefined-css-.navbar-brand"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.navbar-brand">.navbar-brand</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.navbar-brand {
+  /// Estilos para el logotipo de la barra de navegación (`navbar-logo`).
+  /// Define el ancho y alto del logotipo.
+  /// @link ../componentes/navbar#navbar-logo
+  .navbar-logo {
+    width: 30px; // Ancho del logotipo
+    height: 30px; // Alto del logotipo
+  }
+}</code>" data-collapsed=".navbar-brand { ... }"><code>.navbar-brand { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la marca de la barra de navegación (<code>navbar-brand</code>). Incluye configuraciones para el logotipo dentro de la barra de navegación.</p></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../componentes/navbar#navbar-brand</a></li></ul></section><section class="main__item container item" id="undefined-css-.navbar-logo"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.navbar-logo">.navbar-logo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.navbar-logo {
+  width: 30px; // Ancho del logotipo
+    height: 30px; // Alto del logotipo
+}</code>" data-collapsed=".navbar-logo { ... }"><code>.navbar-logo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el logotipo de la barra de navegación (<code>navbar-logo</code>). Define el ancho y alto del logotipo. @link ../componentes/navbar#navbar-logo</p></div></section><section class="main__item container item" id="undefined-css-.logo"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.logo">.logo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.logo {
+  width: 2rem; // Ancho del logotipo
+  height: 2.5rem; // Alto del logotipo
+}</code>" data-collapsed=".logo { ... }"><code>.logo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para el logotipo general (<code>.logo</code>). Utilizado en diferentes partes del diseño.</p></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../componentes/logo</a></li></ul></section><section class="main__item container item" id="undefined-css-&amp;-brand"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-brand">&amp;-brand</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-brand {
+  /// Aplica un efecto de hover &quot;lift&quot; a la marca principal.
+        /// @see hover-effect mixin
+        @include hover-effect(&#39;lift&#39;);
+
+        /// Configuración del logotipo dentro de `.navbar-brand`.
+        /// Define su tamaño.
+        /// @link ../componentes/navbar#navbar-logo
+        .navbar-logo {
+            width: 30px; // Ancho del logotipo
+            height: 30px; // Alto del logotipo
+        }
+}</code>" data-collapsed="&amp;-brand { ... }"><code>&amp;-brand { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la marca dentro de la navbar (<code>.navbar-brand</code>). @link ../componentes/navbar#navbar-brand</p></div></section><section class="main__item container item" id="undefined-css-.navbar-logo"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.navbar-logo">.navbar-logo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.navbar-logo {
+  width: 30px; // Ancho del logotipo
+            height: 30px; // Alto del logotipo
+}</code>" data-collapsed=".navbar-logo { ... }"><code>.navbar-logo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Configuración del logotipo dentro de <code>.navbar-brand</code>. Define su tamaño. @link ../componentes/navbar#navbar-logo</p></div></section><section class="main__item container item" id="undefined-css-&amp;-nav"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-nav">&amp;-nav</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-nav {
+  gap: fluid-size(10px, 20px) !important; // Espaciado fluido entre elementos
+}</code>" data-collapsed="&amp;-nav { ... }"><code>&amp;-nav { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la navegación principal dentro de la navbar (<code>.navbar-nav</code>). Aplica un espaciado fluido entre elementos de navegación. @link ../componentes/navbar#navbar-nav</p></div></section><section class="main__item container item" id="undefined-css-.logo"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.logo">.logo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.logo {
+  width: 2rem; // Ancho del logotipo
+        height: 2.5rem; // Alto del logotipo
+}</code>" data-collapsed=".logo { ... }"><code>.logo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo general para los logotipos. Utilizados en diversos componentes dentro de <code>.navbar</code>. @link ../componentes/logo</p></div></section><section class="main__item container item" id="undefined-css-.nav-item"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.nav-item">.nav-item</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.nav-item {
+  @include hover-effect(&#39;lift&#39;); // Efecto de hover &quot;lift&quot; al pasar el cursor
+}</code>" data-collapsed=".nav-item { ... }"><code>.nav-item { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para los elementos individuales de navegación (<code>.nav-item</code>). Aplica un efecto de hover &quot;lift&quot;. @link ../componentes/navbar#nav-item</p></div></section><section class="main__item container item" id="undefined-css-.nav-link"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.nav-link">.nav-link</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.nav-link {
+  font-size: fluid-size(14px, 20px) !important; // Tamaño adaptativo del texto
+}</code>" data-collapsed=".nav-link { ... }"><code>.nav-link { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los enlaces dentro de la barra de navegación (<code>.nav-link</code>). Define un tamaño de fuente fluido que se adapta al tamaño de pantalla. @link ../componentes/navbar#nav-link</p></div></section><section class="main__item container item" id="undefined-css-.card"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.card">.card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card {
+  height: 11.25rem; // Altura predeterminada para las tarjetas
+
+    /// Estilos para las imágenes dentro de las tarjetas.
+    /// - La imagen cubre todo el área de la tarjeta respetando proporciones.
+    img {
+      height: 100%; // Altura completa de la tarjeta
+      object-fit: cover; // Ajusta la imagen dentro de su contenedor
+    }
+}</code>" data-collapsed=".card { ... }"><code>.card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las tarjetas (<code>.card</code>) dentro del carrusel.</p></div></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#undefined-css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  height: 100%; // Altura completa de la tarjeta
+      object-fit: cover; // Ajusta la imagen dentro de su contenedor
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las imágenes dentro de las tarjetas. - La imagen cubre todo el área de la tarjeta respetando proporciones.</p></div></section><section class="main__item container item" id="undefined-css-.testimonial-author"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.testimonial-author">.testimonial-author</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.testimonial-author {
+  font-style: italic; // Estilo de texto en cursiva
+  color: #6c757d; // Color gris suave
+  margin-top: 0.75rem; // Espaciado superior
+  position: relative; // Para habilitar pseudo-elementos
+  padding-left: 1rem; // Espaciado interior a la izquierda
+  border-left: 2px solid #dee2e6; // Línea decorativa a la izquierda
+  font-size: 0.9em; // Tamaño ligeramente reducido
+  line-height: 1.4; // Altura de línea para mejor legibilidad
+}</code>" data-collapsed=".testimonial-author { ... }"><code>.testimonial-author { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el autor del testimonio (<code>.testimonial-author</code>). Incluye detalles como estilo de texto, un borde decorativo y espaciado.</p></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../componentes/testimonials#testimonial-author</a></li></ul></section><section class="main__item container item" id="undefined-css-.testimonial-author::before"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.testimonial-author::before">.testimonial-author::before</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.testimonial-author::before {
+  content: &quot;—&quot;; // Guion largo como detalle inicial
+  position: absolute; // Posicionado relativo al contenedor padre
+  left: 0.25rem; // Espaciado a la izquierda
+  color: #adb5bd; // Color gris suave
+}</code>" data-collapsed=".testimonial-author::before { ... }"><code>.testimonial-author::before { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Pseudo-elemento decorativo para el autor del testimonio. Añade un guion largo (<code>—</code>) al inicio de la cita.</p></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../componentes/testimonials#testimonial-author</a></li></ul></section><section class="main__item container item" id="undefined-css-backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header"><h3 class="item__heading"><a class="item__name" href="#undefined-css-backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header">backdrop-filter: blur(5px); // Fondo con desenfoque leve /// Fijar el color de fondo con transparencia. background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente /// Estilos para el encabezado del `popover` (`.popover-header`). /// Incluye un degradado basado en el color primario y texto en blanco. /// @link ../componentes/popover#popover-header &amp;-header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header {
+  background: linear-gradient(
+                    45deg,
+                    map-get($colors, &#39;primary&#39;), // Color primario desde `$colors`
+                    darken(map-get($colors, &#39;primary&#39;), 10%) // Oscurecimiento del color primario
+    );
+    color: white !important; // Texto blanco
+    border: none; // Sin bordes para el encabezado
+}</code>" data-collapsed="backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header { ... }"><code>backdrop-filter: blur(5px); // Fondo con desenfoque leve
+
+  /// Fijar el color de fondo con transparencia.
+  background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Aplica un efecto de desenfoque al fondo del <code>popover</code>.</p></div></section><section class="main__item container item" id="undefined-css-background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header"><h3 class="item__heading"><a class="item__name" href="#undefined-css-background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header">background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente /// Estilos para el encabezado del `popover` (`.popover-header`). /// Incluye un degradado basado en el color primario y texto en blanco. /// @link ../componentes/popover#popover-header &amp;-header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header {
+  background: linear-gradient(
+                    45deg,
+                    map-get($colors, &#39;primary&#39;), // Color primario desde `$colors`
+                    darken(map-get($colors, &#39;primary&#39;), 10%) // Oscurecimiento del color primario
+    );
+    color: white !important; // Texto blanco
+    border: none; // Sin bordes para el encabezado
+}</code>" data-collapsed="background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header { ... }"><code>background-color: rgba(255, 255, 255, 0.95); // Fondo blanco semitransparente
+
+  /// Estilos para el encabezado del `popover` (`.popover-header`).
+  /// Incluye un degradado basado en el color primario y texto en blanco.
+  /// @link ../componentes/popover#popover-header
+  &amp;-header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Fijar el color de fondo con transparencia.</p></div></section><section class="main__item container item" id="undefined-css-&amp;-header"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-header">&amp;-header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-header {
+  background: linear-gradient(
+                    45deg,
+                    map-get($colors, &#39;primary&#39;), // Color primario desde `$colors`
+                    darken(map-get($colors, &#39;primary&#39;), 10%) // Oscurecimiento del color primario
+    );
+    color: white !important; // Texto blanco
+    border: none; // Sin bordes para el encabezado
+}</code>" data-collapsed="&amp;-header { ... }"><code>&amp;-header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el encabezado del <code>popover</code> (<code>.popover-header</code>). Incluye un degradado basado en el color primario y texto en blanco. @link ../componentes/popover#popover-header</p></div></section><section class="main__item container item" id="undefined-css-&amp;-body"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-body">&amp;-body</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-body {
+  font-size: 0.9rem; // Tamaño del texto
+    line-height: 1.6; // Mejor legibilidad con mayor altura de las líneas
+}</code>" data-collapsed="&amp;-body { ... }"><code>&amp;-body { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el cuerpo del <code>popover</code> (<code>.popover-body</code>). Define el tamaño del texto y la altura de línea. @link ../componentes/popover#popover-body</p></div></section><section class="main__item container item" id="undefined-css-&amp;.custom-popover"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;.custom-popover">&amp;.custom-popover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;.custom-popover {
+  animation: popoverFade 0.3s ease-in-out; // Animación personalizada
+}</code>" data-collapsed="&amp;.custom-popover { ... }"><code>&amp;.custom-popover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para un <code>popover</code> con clase adicional personalizada (<code>.custom-popover</code>). Aplica una animación de entrada/salida suave. @link ../componentes/popover#custom-popover</p></div></section><section class="main__item container item" id="undefined-css-height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text"><h3 class="item__heading"><a class="item__name" href="#undefined-css-height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text">height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer /// Color de texto y fondo del footer. /// El color de fondo utiliza el color primario global del proyecto. color: #fff; background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer /// Estilos para el texto dentro del footer (`.text`). /// Configura márgenes y tamaños de fuente responsivos. /// @link ../componentes/footer#text .text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text {
+  margin-top: 0.5rem !important; // Espaciado superior
+    font-size: fluid-size(14, 18) !important; // Tamaño responsivo del texto
+}</code>" data-collapsed="height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text { ... }"><code>height: map-get($sizes, &#39;footer-height&#39;); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Altura del footer definida dinámicamente desde <code>$sizes</code>.</p></div></section><section class="main__item container item" id="undefined-css-color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text"><h3 class="item__heading"><a class="item__name" href="#undefined-css-color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text">color: #fff; background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer /// Estilos para el texto dentro del footer (`.text`). /// Configura márgenes y tamaños de fuente responsivos. /// @link ../componentes/footer#text .text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text {
+  margin-top: 0.5rem !important; // Espaciado superior
+    font-size: fluid-size(14, 18) !important; // Tamaño responsivo del texto
+}</code>" data-collapsed="color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text { ... }"><code>color: #fff;
+  background-color: map-get($colors, &#39;primary&#39;); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color de texto y fondo del footer. El color de fondo utiliza el color primario global del proyecto.</p></div></section><section class="main__item container item" id="undefined-css-.text"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.text">.text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.text {
+  margin-top: 0.5rem !important; // Espaciado superior
+    font-size: fluid-size(14, 18) !important; // Tamaño responsivo del texto
+}</code>" data-collapsed=".text { ... }"><code>.text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el texto dentro del footer (<code>.text</code>). Configura márgenes y tamaños de fuente responsivos. @link ../componentes/footer#text</p></div></section><section class="main__item container item" id="undefined-css-.bi"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.bi">.bi</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.bi {
+  font-size: fluid-size(15, 18) !important; // Tamaño responsivo de los íconos
+}</code>" data-collapsed=".bi { ... }"><code>.bi { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para íconos de Bootstrap (<code>.bi</code>) utilizados en el footer. Define tamaños de fuente adaptativos. @link ../componentes/footer#icons</p></div></section><section class="main__item container item" id="undefined-css-.btn-floating"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.btn-floating">.btn-floating</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.btn-floating {
+  font-size: 0.7rem; // Tamaño de letra reducido para botones flotantes
+      padding: 0.3rem 0.5rem; // Relleno reducido
+}</code>" data-collapsed=".btn-floating { ... }"><code>.btn-floating { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para botones flotantes (<code>.btn-floating</code>) dentro del footer. Ajusta el tamaño de fuente y el relleno para pantallas medianas. @link ../componentes/footer#btn-floating</p></div></section><section class="main__item container item" id="undefined-css-transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}
+
+/// Estilos personalizados para el botón primario (`.btn-primary`).
+/// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.
+/// @group Buttons
+.btn-primary"><h3 class="item__heading"><a class="item__name" href="#undefined-css-transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}
+
+/// Estilos personalizados para el botón primario (`.btn-primary`).
+/// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.
+/// @group Buttons
+.btn-primary">transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales } /// Estilos personalizados para el botón primario (`.btn-primary`). /// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus. /// @group Buttons .btn-primary</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}
+
+/// Estilos personalizados para el botón primario (`.btn-primary`).
+/// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.
+/// @group Buttons
+.btn-primary {
+  /// Color de fondo del botón primario determinado por `$colors[&#39;button&#39;]`.
+  background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus {
+    background-color: darken(map-get($colors, &#39;button&#39;), 10%); // Fondo más oscuro
+    border-color: darken(map-get($colors, &#39;button&#39;), 10%); // Borde más oscuro
+  }
+}</code>" data-collapsed="transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}
+
+/// Estilos personalizados para el botón primario (`.btn-primary`).
+/// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.
+/// @group Buttons
+.btn-primary { ... }"><code>transition: top 0.3s ease-in-out; // Transición fluida para movimientos verticales
+}
+
+/// Estilos personalizados para el botón primario (`.btn-primary`).
+/// Configura el color de fondo, bordes y estilos en diferentes estados como hover y focus.
+/// @group Buttons
+.btn-primary { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Define una transición suave para la propiedad <code>top</code>. Útil para efectos dinámicos en la posición del elemento principal.</p></div></section><section class="main__item container item" id="undefined-css-background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus"><h3 class="item__heading"><a class="item__name" href="#undefined-css-background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus">background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales /// Color del borde del botón primario. border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables /// Estilos para los estados hover y focus del botón primario. /// Oscurece el color de fondo y del borde para el efecto visual. &amp;:hover, &amp;:focus</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus {
+  background-color: darken(map-get($colors, &#39;button&#39;), 10%); // Fondo más oscuro
+    border-color: darken(map-get($colors, &#39;button&#39;), 10%); // Borde más oscuro
+}</code>" data-collapsed="background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus { ... }"><code>background-color: map-get($colors, &#39;button&#39;); // Fondo acorde con las variables globales
+
+  /// Color del borde del botón primario.
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color de fondo del botón primario determinado por <code>$colors[&#39;button&#39;]</code>.</p></div></section><section class="main__item container item" id="undefined-css-border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus"><h3 class="item__heading"><a class="item__name" href="#undefined-css-border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus">border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables /// Estilos para los estados hover y focus del botón primario. /// Oscurece el color de fondo y del borde para el efecto visual. &amp;:hover, &amp;:focus</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus {
+  background-color: darken(map-get($colors, &#39;button&#39;), 10%); // Fondo más oscuro
+    border-color: darken(map-get($colors, &#39;button&#39;), 10%); // Borde más oscuro
+}</code>" data-collapsed="border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus { ... }"><code>border-color: map-get($colors, &#39;button&#39;); // Borde principal basado en las variables
+
+  /// Estilos para los estados hover y focus del botón primario.
+  /// Oscurece el color de fondo y del borde para el efecto visual.
+  &amp;:hover, &amp;:focus { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color del borde del botón primario.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover, &amp;:focus"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover, &amp;:focus">&amp;:hover, &amp;:focus</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover, &amp;:focus {
+  background-color: darken(map-get($colors, &#39;button&#39;), 10%); // Fondo más oscuro
+    border-color: darken(map-get($colors, &#39;button&#39;), 10%); // Borde más oscuro
+}</code>" data-collapsed="&amp;:hover, &amp;:focus { ... }"><code>&amp;:hover, &amp;:focus { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los estados hover y focus del botón primario. Oscurece el color de fondo y del borde para el efecto visual.</p></div></section><section class="main__item container item" id="undefined-css-color: map-get($colors, &#39;button&#39;); // Color de texto
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &amp;:hover, &amp;:focus"><h3 class="item__heading"><a class="item__name" href="#undefined-css-color: map-get($colors, &#39;button&#39;); // Color de texto
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &amp;:hover, &amp;:focus">color: map-get($colors, &#39;button&#39;); // Color de texto border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón /// Estilos para los estados hover y focus del botón con contorno. /// Cambia el fondo y el borde al color principal. &amp;:hover, &amp;:focus</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>color: map-get($colors, &#39;button&#39;); // Color de texto
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &amp;:hover, &amp;:focus {
+  background-color: map-get($colors, &#39;button&#39;); // Fondo del color principal
+    border-color: map-get($colors, &#39;button&#39;); // Borde del color principal
+}</code>" data-collapsed="color: map-get($colors, &#39;button&#39;); // Color de texto
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &amp;:hover, &amp;:focus { ... }"><code>color: map-get($colors, &#39;button&#39;); // Color de texto
+  border-color: map-get($colors, &#39;button&#39;); // Borde principal del botón
+
+  /// Estilos para los estados hover y focus del botón con contorno.
+  /// Cambia el fondo y el borde al color principal.
+  &amp;:hover, &amp;:focus { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>El color principal del botón y su borde se basan en <code>$colors[&#39;button&#39;]</code>.</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover, &amp;:focus"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;:hover, &amp;:focus">&amp;:hover, &amp;:focus</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover, &amp;:focus {
+  background-color: map-get($colors, &#39;button&#39;); // Fondo del color principal
+    border-color: map-get($colors, &#39;button&#39;); // Borde del color principal
+}</code>" data-collapsed="&amp;:hover, &amp;:focus { ... }"><code>&amp;:hover, &amp;:focus { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los estados hover y focus del botón con contorno. Cambia el fondo y el borde al color principal.</p></div></section></section><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-colors"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-colors">colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$colors: (
+        &#39;primary&#39;: #4a5568,          // Color principal
+        &#39;secondary&#39;: #6c757d,        // Color secundario
+        &#39;background&#39;: #f8f9fa,       // Color de fondo
+        &#39;text&#39;: #333,                // Color de texto
+        &#39;button&#39;: #212529,           // Color principal de los botones
+        &#39;title&#39;: #ffffff             // Color títulos
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapas de colores utilizados en el proyecto. Este mapa incluye colores principales y secundarios, además de valores utilizados como fondo, texto y botones.</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#components-mixin-testimonial-component"><code>testimonial-component</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#functions-function-random-color"><code>random-color</code></a></li></ul><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../base/variables#colors</a></li></ul></section><section class="main__item container item" id="undefined-variable-sizes"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-sizes">sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$sizes: (
+        &#39;header-height&#39;: 4rem,       // Altura del encabezado
+        &#39;footer-height&#39;: 7rem        // Altura del pie de página
+
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Medidas generales utilizadas en el diseño. Contiene la altura del header y del footer.</p></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../base/variables#sizes</a></li></ul></section><section class="main__item container item" id="undefined-variable-breakpoints"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-breakpoints">breakpoints</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$breakpoints: (
+        &#39;sm&#39;: 576px,                // Pequeño
+        &#39;md&#39;: 768px,                // Mediano
+        &#39;lg&#39;: 992px,                // Grande
+        &#39;xl&#39;: 1200px                // Extra grande
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Puntos de quiebre para diseño responsive. Cada punto de quiebre corresponde a un tamaño (<code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>).</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-respond-to"><code>respond-to</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-respond-to"><code>respond-to</code></a></li></ul><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../base/variables#breakpoints</a></li></ul></section><section class="main__item container item" id="undefined-variable-card-gradient"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-card-gradient">card-gradient</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$card-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos relacionados con las tarjetas (<code>cards</code>). Define características visuales como gradiente, sombras, bordes redondeados y animaciones de hover.</p></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../base/variables#card-styles</a></li></ul></section><section class="main__item container item" id="undefined-variable-caracteristicas-button-primary"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-caracteristicas-button-primary">caracteristicas-button-primary</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$caracteristicas-button-primary: #4a5d68;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Colores personalizados para los botones. Incluye valores como el color base, gradientes y estilos de contorno.</p></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../base/variables#button-styles</a></li></ul></section><section class="main__item container item" id="undefined-variable-popover-max-width"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-popover-max-width">popover-max-width</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$popover-max-width: 300px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos personalizados para el componente <code>popover</code> de Bootstrap. Sobrescribe variables predeterminadas para ajustar el diseño.</p></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="">../base/variables#popover</a></li></ul></section><section class="main__item container item" id="undefined-variable-fonts"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-fonts">fonts</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$fonts: (
+        &#39;primary&#39;: &#39;Roboto, sans-serif&#39;,  // Fuente principal
+        &#39;secondary&#39;: &#39;Montserrat, sans-serif&#39;  // Fuente secundaria
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de fuentes tipográficas utilizadas en el proyecto. Utilizamos dos fuentes principales:</p><ul><li><code>primary</code>: Roboto (texto general, cuerpo)</li><li><code>secondary</code>: Montserrat (encabezados como h1)</li></ul></div></section><section class="main__item container item" id="undefined-variable-carousel-control-color"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-carousel-control-color">carousel-control-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$carousel-control-color: map-get($colors, &#39;primary&#39;);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variables personalizadas para modificar el componente de carrusel de Bootstrap. Estas variables redefinen los colores principales y activos utilizados en los controles y los indicadores del carrusel.</p></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Timetracksassgulp</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

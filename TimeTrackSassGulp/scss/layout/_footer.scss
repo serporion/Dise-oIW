@@ -1,0 +1,55 @@
+/// Importación de variables desde "../base/variables".
+/// Contiene configuraciones globales como `$sizes` y `$colors`.
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Importación de mixins desde "../utilidades/mixins".
+/// Incluye utilidades responsivas como `respond-to`.
+/// @link ../utilidades/mixins
+@use "../utilidades/mixins" as *;
+
+/// Importación de funciones desde "../utilidades/funciones".
+/// Contiene funciones avanzadas como `fluid-size`.
+/// @link ../utilidades/funciones
+@use "../utilidades/funciones" as *;
+
+/// Estilos personalizados para el componente `footer`.
+/// Configura altura, colores y estilos específicos para texto, íconos y botones.
+/// @group Footer
+footer {
+  /// Altura del footer definida dinámicamente desde `$sizes`.
+  height: map-get($sizes, 'footer-height'); // Altura personalizada del footer
+
+  /// Color de texto y fondo del footer.
+  /// El color de fondo utiliza el color primario global del proyecto.
+  color: #fff;
+  background-color: map-get($colors, 'primary'); // Fondo principal del footer
+
+  /// Estilos para el texto dentro del footer (`.text`).
+  /// Configura márgenes y tamaños de fuente responsivos.
+  /// @link ../componentes/footer#text
+  .text {
+    margin-top: 0.5rem !important; // Espaciado superior
+    font-size: fluid-size(14, 18) !important; // Tamaño responsivo del texto
+  }
+
+  /// Estilos para íconos de Bootstrap (`.bi`) utilizados en el footer.
+  /// Define tamaños de fuente adaptativos.
+  /// @link ../componentes/footer#icons
+  .bi {
+    font-size: fluid-size(15, 18) !important; // Tamaño responsivo de los íconos
+  }
+
+  /// Reglas específicas para pantallas medianas (`md`) y mayores.
+  /// Define estilos personalizados para botones flotantes.
+  /// @see respond-to mixin
+  @include respond-to('md') {
+    /// Estilos para botones flotantes (`.btn-floating`) dentro del footer.
+    /// Ajusta el tamaño de fuente y el relleno para pantallas medianas.
+    /// @link ../componentes/footer#btn-floating
+    .btn-floating {
+      font-size: 0.7rem; // Tamaño de letra reducido para botones flotantes
+      padding: 0.3rem 0.5rem; // Relleno reducido
+    }
+  }
+}

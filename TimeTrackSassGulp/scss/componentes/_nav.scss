@@ -1,0 +1,73 @@
+/// Importación de mixins desde "../utilidades/mixins".
+/// Contiene helpers como `navigation`, `dynamic-gradient` y `hover-effect`.
+/// @link ../utilidades/mixins
+@use "../utilidades/mixins" as *;
+
+/// Importación de funciones desde "../utilidades/funciones".
+/// Incluye funciones avanzadas como `fluid-size`.
+/// @link ../utilidades/funciones
+@use "../utilidades/funciones" as *;
+
+/// Importación de variables desde "../base/variables".
+/// Este archivo contiene configuraciones como `$sizes`.
+/// @link ../base/variables
+@use "../base/variables" as *;
+
+/// Estilos personalizados para la barra de navegación (`.navbar`).
+/// Incluye estilos generales y variantes específicas para las marcas, logos, enlaces, y elementos de navegación.
+/// @group Navigation
+.navbar {
+    /// Incluye el mixin `navigation` para configurar estilos básicos de navegación.
+    /// Además, aplica un gradiente dinámico (a través de `dynamic-gradient`).
+    /// Define la altura mínima de la navbar de acuerdo con la variable `$sizes['header-height']`.
+    @include navigation;
+    @include dynamic-gradient;
+    min-height: map-get($sizes, 'header-height'); // Altura mínima de la barra de navegación
+    padding: fluid-size(10px, 15px) !important;  // Padding adaptativo utilizando `fluid-size`
+    font-family: map-get($fonts, 'primary') !important;
+
+    /// Estilos para la marca dentro de la navbar (`.navbar-brand`).
+    /// @link ../componentes/navbar#navbar-brand
+    &-brand {
+        /// Aplica un efecto de hover "lift" a la marca principal.
+        /// @see hover-effect mixin
+        @include hover-effect('lift');
+
+        /// Configuración del logotipo dentro de `.navbar-brand`.
+        /// Define su tamaño.
+        /// @link ../componentes/navbar#navbar-logo
+        .navbar-logo {
+            width: 30px; // Ancho del logotipo
+            height: 30px; // Alto del logotipo
+        }
+    }
+
+    /// Estilos para la navegación principal dentro de la navbar (`.navbar-nav`).
+    /// Aplica un espaciado fluido entre elementos de navegación.
+    /// @link ../componentes/navbar#navbar-nav
+    &-nav {
+        gap: fluid-size(10px, 20px) !important; // Espaciado fluido entre elementos
+    }
+
+    /// Estilo general para los logotipos.
+    /// Utilizados en diversos componentes dentro de `.navbar`.
+    /// @link ../componentes/logo
+    .logo {
+        width: 2rem; // Ancho del logotipo
+        height: 2.5rem; // Alto del logotipo
+    }
+
+    /// Estilo para los elementos individuales de navegación (`.nav-item`).
+    /// Aplica un efecto de hover "lift".
+    /// @link ../componentes/navbar#nav-item
+    .nav-item {
+        @include hover-effect('lift'); // Efecto de hover "lift" al pasar el cursor
+    }
+
+    /// Estilos para los enlaces dentro de la barra de navegación (`.nav-link`).
+    /// Define un tamaño de fuente fluido que se adapta al tamaño de pantalla.
+    /// @link ../componentes/navbar#nav-link
+    .nav-link {
+        font-size: fluid-size(14px, 20px) !important; // Tamaño adaptativo del texto
+    }
+}
